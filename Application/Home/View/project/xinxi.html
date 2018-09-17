@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>用户信息</title>
+    <link rel="stylesheet" href="__PUBLIC__/css/bootstrap.min.css">
+    <style>
+th{
+    border: none;
+    color: skyblue;
+}
+       td{
+
+       }
+        #login{
+            margin-left: 20%;
+            font-size: 20px;
+        }
+        #ziliao{
+            margin-left: 10%;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body background="__PUBLIC__/images/beijing.jpg" style="background-repeat:no-repeat;background-size:100% 100%;
+background-attachment: fixed;">
+<header>
+    <div class="col-md-12" style="background-color: beige">
+        <div class="container">
+            <div class="pull-left" style="font-size: 30px;color: #2aabd2">
+                BTP
+            </div>
+            <div class="pull-right" style="margin: 20px 30px 0 0;">
+                欢迎您，
+                xx
+                <a href="" style="text-decoration: none">安全退出</a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class=" container-fluid" style="background-color: #2aabd2">
+        <ul class="nav nav-pills" style="margin-left: 20%">
+            <!--<li><a href="<{:U('xinxi',array('caozuo'=>0))}>">首页</a></li>-->
+            <li><a href="xinxi.html?cao=0">个人信息</a></li>
+            <li><a href="xinxi.html?cao=1">信息修改</a></li>
+            <li><a href="xinxi.html?cao=2">个人笔记</a></li>
+        </ul>
+    </div>
+</header>
+<!--页面内容-->
+<div class="container" style="margin-top: 30px;">
+
+        <if condition="$cao eq 0">
+            <div class="col-md-9 col-md-offset-1" style="text-align: center">
+                <h2>个人资料显示</h2>
+                <table class="table" id="ziliao">
+                    <tr>
+                        <th style="border: none">姓名:</th>
+                        <td style="border: none">xxx</td>
+                    </tr>
+                    <tr>
+                        <th style="border: none">昵称:</th>
+                        <td style="border: none">xxx</td>
+                    </tr>
+                    <tr>
+                        <th style="border: none">性别:</th>
+                        <td style="border: none">xxx</td>
+                    </tr>
+                    <tr>
+                        <th style="border: none">电话:</th>
+                        <td style="border: none">xxx</td>
+                    </tr>
+                    <tr>
+                        <th style="border: none">Email:</th>
+                        <td style="border: none">xxx</td>
+                    </tr>
+                    <tr>
+                        <th style="border: none">地址:</th>
+                        <td style="border: none">xxx</td>
+                    </tr>
+                    <tr>
+                        <th style="border: none">QQ:</th>
+                        <td style="border: none">xxx</td>
+                    </tr>
+                </table>
+            </div>
+            <elseif condition="$cao eq 1"/>
+            <div class="tab-content" style="text-align: center">
+                <h2>信息修改</h2>
+                <div class="col-md-9 col-md-offset-1" >
+                    <form action="" method="post">
+                        <table class="table" id="login">
+                            <tr>
+                                <th  style="border: none">姓名：</th>
+                                <td  style="border: none">
+                                    <input type="text" name="uloginname" id="uloginname" value=""
+                                           style="width: 35%" class="input-sm">
+                                </td>
+                            </tr>
+                            <tr >
+                                <th  style="border: none">昵称：</th>
+                                <td  style="border: none">
+                                    <input type="text" id="uname" name="uname" value=""
+                                           style="width: 35%;"
+                                           class="input-sm">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th  style="border: none">性别：</th>
+                                <td  style="border: none">
+                                    <input type="radio" name="usex" value="" id="male" checked><label
+                                        for="male" style="padding-right: 35px;">男</label>
+                                    <input type="radio" name="usex" value="" id="female"><label
+                                        for="female">女</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th  style="border: none">生日：</th>
+                                <td  style="border: none">
+                                    <input type="date" value="" id="ubirthdayy" name="ubirthday"
+                                           style="width: 35%;" class="input-sm">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th  style="border: none">
+                                    电话：
+                                </th>
+                                <td  style="border: none">
+                                    <input type="text" id="umobile" name="umobile" value=""
+                                           style="width: 35%;" class="input-sm">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th  style="border: none">地址：</th>
+                                <td  style="border: none">
+                                    <input type="text" id="uaddress" value="" name="uaddress"
+                                           style="width: 35%;" class="input-sm">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th  style="border: none">
+                                    Email：
+                                </th>
+                                <td  style="border: none">
+                                    <input type="text" id="uemail" value="" name="uemail"
+                                           style="width: 35%;" class="input-sm">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th  style="border: none"> QQ：</th>
+                                <td  style="border: none">
+                                    <input type="text" id="uqq " name="uqq" value="" style="width: 35%;"
+                                           class="input-sm">
+                                </td>
+                            </tr>
+
+                        </table>
+
+
+                        <p>
+                            <input type="submit" class="btn btn-primary btn-lg" style="width: 10%;" value=" 修改 ">
+                        </p>
+                    </form>
+                </div>
+            </div>
+
+
+            <elseif condition="$cao eq 2"/>
+            <h2><a href="" style="text-decoration: none">文章题目</a></h2>
+            <p style="text-indent: 2em;">
+                <span style="color: #2aabd2">评论内容</span>
+            </p>
+            <div class="pull-right">
+                评论时间
+            </div>
+        </if>
+    </div>
+
+
+
+<script src="__PUBLIC__/js/jquery-1.12.2.min.js"></script>
+<script src="__PUBLIC__/js/bootstrap.min.js"></script>
+</body>
+</html>

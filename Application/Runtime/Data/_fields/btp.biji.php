@@ -1,0 +1,1 @@
+a:9:{i:0;s:3:"bid";i:1;s:3:"uid";i:2;s:3:"zid";i:3;s:8:"bcontent";i:4;s:5:"btime";i:5;s:15:"blastupdatetime";i:6;s:8:"bisvalid";s:3:"_pk";s:3:"bid";s:5:"_type";a:7:{s:3:"bid";s:7:"int(11)";s:3:"uid";s:7:"int(11)";s:3:"zid";s:7:"int(11)";s:8:"bcontent";s:4:"text";s:5:"btime";s:8:"datetime";s:15:"blastupdatetime";s:8:"datetime";s:8:"bisvalid";s:10:"tinyint(4)";}}

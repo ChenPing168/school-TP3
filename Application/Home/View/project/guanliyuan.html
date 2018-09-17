@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>管理员操作界面</title>
+    <script type="text/javascript" src="__PUBLIC__/ueditor/ueditor.config.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/ueditor/ueditor.all.min.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/ueditor/lang/zh-cn/zh-cn.js"></script>
+    <link rel="stylesheet" href="__PUBLIC__/css/bootstrap.min.css">
+    <style>
+        * {
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            -webkit-box-sizing:border-box;
+            -moz-box-sizing:border-box;
+            -webkit-font-smoothing:antialiased;
+            -moz-font-smoothing:antialiased;
+            -o-font-smoothing:antialiased;
+            font-smoothing:antialiased;
+            text-rendering:optimizeLegibility;
+        }
+
+        body {
+            font-family:"Open Sans", Helvetica, Arial, sans-serif;
+            font-weight:300;
+            font-size: 12px;
+            line-height:30px;
+            color:#777;
+            background:#0CF;
+        }
+
+        .four {
+            max-width:400px;
+            width:100%;
+            margin:0 auto;
+            position:relative;
+        }
+
+        #contact input[type="text"], #contact input[type="date"], #contact textarea, #contact button[type="submit"] { font:400 12px/16px "Open Sans", Helvetica, Arial, sans-serif; }
+
+        #contact {
+            background:lightskyblue;
+            padding:25px;
+            margin:5px 0;
+        }
+
+        #contact h3 {
+            color: #F96;
+            display: block;
+            font-size: 30px;
+            font-weight: 400;
+        }
+
+
+        fieldset {
+            border: medium none !important;
+            margin: 0 0 10px;
+            min-width: 100%;
+            padding: 0;
+            width: 100%;
+        }
+
+        #contact input[type="text"], #contact input[type="date"] {
+            width:100%;
+            border:1px solid #CCC;
+            background:#FFF;
+            margin:0 0 5px;
+            padding:10px;
+        }
+
+
+        #contact button[type="submit"] {
+            cursor:pointer;
+            width:100%;
+            border:none;
+            background:#0CF;
+            color:#FFF;
+            margin:0 0 5px;
+            padding:10px;
+            font-size:15px;
+        }
+
+        #contact button[type="submit"]:hover {
+            background:#09C;
+            -webkit-transition:background 0.3s ease-in-out;
+            -moz-transition:background 0.3s ease-in-out;
+            transition:background-color 0.3s ease-in-out;
+        }
+        #paword input[type="text"],#paword textarea,#paword select{
+            width:100%;
+            border:1px solid #CCC;
+            background:#FFF;
+            margin:0 0 5px;
+            padding:10px;
+        }
+        #paword textarea{
+            height: 100px;
+        }
+
+        #paword button[type="submit"]{
+            cursor:pointer;
+            width:100%;
+            border:none;
+            background:#0CF;
+            color:#FFF;
+            /*margin:0 0 5px;*/
+            padding:10px;
+            font-size:15px;
+        }
+        #paword button[type="submit"]:hover {
+            background:#09C;
+            -webkit-transition:background 0.3s ease-in-out;
+            -moz-transition:background 0.3s ease-in-out;
+            transition:background-color 0.3s ease-in-out;
+        }
+        .six{
+            max-width:400px;
+            width:100%;
+            margin:0 auto;
+            position:relative;
+        }
+        #paword input[type="text"],#paword textarea,#paword select{
+            font:400 12px/16px "Open Sans", Helvetica, Arial, sans-serif;
+        }
+        #paword{
+            background:lightskyblue;
+            padding:23px;
+            margin:5px 0;
+        }
+        #paword h3{
+            color: #F96;
+            display: block;
+            font-size: 30px;
+            font-weight: 400;
+        }
+
+
+
+        .tone{
+            width: 500px;
+            height: 85px;
+        }
+        .three{
+            background-color:#0099FF;
+        }
+        body {
+
+            margin: 0;
+            font-size: 1.2em;
+            font-family: Helvetica Neue,Helvetica,PingFang SC,Hiragino Sans GB,Microsoft YaHei,Noto Sans CJK SC,WenQuanYi Micro Hei,Arial,sans-serif;
+            -webkit-font-smoothing: antialiased;
+            background: #f6f6f6;
+            color: #333;
+        }
+        .one{
+            height: 100px;
+        }
+        #rounded-corner
+        {
+            margin:0px;
+            width:700px;
+            text-align: left;
+            border-collapse: collapse;
+        }
+        #rounded
+        {
+            margin:0px;
+            width:700px;
+            text-align: left;
+            border-collapse: collapse;
+        }
+        table{
+            text-align: center;
+        }
+
+        #rounded-corner th
+        {
+            padding: 8px;
+            font-weight: normal;
+            font-size: 13px;
+            color: #039;
+            background: #60c8f2;
+        }
+        #rounded th
+        {
+            padding: 8px;
+            font-weight: normal;
+            font-size: 13px;
+            color: #039;
+            background: #60c8f2;
+        }
+        #rounded-corner td
+        {
+            padding: 8px;
+            background: #ecf8fd;
+            border-top: 1px solid #fff;
+            color: #669;
+        }
+        #rounded td
+        {
+            font-size: 13px;
+            padding: 8px;
+            background: #ecf8fd;
+            border-top: 1px solid #fff;
+            color: #669;
+        }
+        #rounded-corner tbody tr:hover td
+        {
+            background: #d2e7f0;
+        }
+        #rounded tbody tr:hover td
+        {
+            background: #d2e7f0;
+        }
+        #glzsd
+        {
+            margin:0px;
+            width:625px;
+            text-align: left;
+            border-collapse: collapse;
+        }
+        #glzsd th
+        {
+            padding: 8px;
+            font-weight: normal;
+            font-size: 13px;
+            color: #039;
+            background: #60c8f2;
+        }
+        #glzsd td
+        {
+            padding: 8px;
+            background: #ecf8fd;
+            border-top: 1px solid #fff;
+            color: #669;
+        }
+
+        #glzsd tbody tr:hover td
+        {
+            background: #d2e7f0;
+        }
+        .pages a, .pages span {
+            display: inline-block;
+            padding: 2px 5px;
+            margin: 0 1px;
+            border: 1px solid #f0f0f0;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            border-radius: 3px;
+        }
+
+        .pages a, .pages li {
+            display: inline-block;
+            list-style: none;
+            text-decoration: none;
+            color: #58A0D3;
+        }
+
+        .pages a.first, .pages a.prev, .pages a.next, .pages a.end {
+            margin: 0;
+        }
+
+        .pages a:hover {
+            border-color: #50A8E6;
+        }
+
+        .pages span.current {
+            background: #50A8E6;
+            color: #FFF;
+            font-weight: 700;
+            border-color: #50A8E6;
+        }
+        #szsd
+        {
+            margin:0px;
+            width:625px;
+            text-align: left;
+            border-collapse: collapse;
+        }
+        #szsd th
+        {
+            padding: 8px;
+            font-weight: normal;
+            font-size: 13px;
+            color: #039;
+            background: #60c8f2;
+        }
+        #szsd td
+        {
+            padding: 8px;
+            background: #ecf8fd;
+            border-top: 1px solid #fff;
+            color: #669;
+        }
+
+        #szsd tbody tr:hover td
+        {
+            background: #d2e7f0;
+        }
+        #blist
+        {
+            margin:0px;
+            width:625px;
+            text-align: left;
+            border-collapse: collapse;
+        }
+        #blist th
+        {
+            padding: 8px;
+            font-weight: normal;
+            font-size: 13px;
+            color: #039;
+            background: #60c8f2;
+        }
+        #blist td
+        {
+            padding: 8px;
+            background: #ecf8fd;
+            border-top: 1px solid #fff;
+            color: #669;
+        }
+
+        #blist tbody tr:hover td
+        {
+            background: #d2e7f0;
+        }
+        #wtcss
+        {
+            margin:0px;
+            width:625px;
+            text-align: left;
+            border-collapse: collapse;
+        }
+        #wtcss th
+        {
+            padding: 8px;
+            font-weight: normal;
+            font-size: 13px;
+            color: #039;
+            background: #60c8f2;
+        }
+        #wtcss td
+        {
+            padding: 8px;
+            background: #ecf8fd;
+            border-top: 1px solid #fff;
+            color: #669;
+        }
+
+        #wtcss tbody tr:hover td
+        {
+            background: #d2e7f0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="row one" style="">
+        <div class="row tone">
+
+            <h1 class="pull-left" style="color: #2aabd2">
+                <a href="<{:U('user/login')}>" style="text-decoration: none"> BTP</a>
+            </h1>
+        </div>
+    </div>
+</div>
+<div class="row three" style="background-color: #2aabd2">
+    <ul class="nav nav-pills" style="margin-left: 20%">
+        <!--<li><a href="<{:U('xinxi',array('caozuo'=>0))}>">首页</a></li>-->
+        <li><a href="<{:U('guanliyuan',array('gly'=>0))}>">用户管理</a></li>
+        <li><a href="<{:U('guanliyuan',array('gly'=>1))}>">修改个人资料</a></li>
+        <li><a href="<{:U('guanliyuan',array('gly'=>2))}>">添加知识点</a></li>
+        <li><a href="<{:U('guanliyuan',array('gly'=>3))}>">知识点管理</a></li>
+        <li><a href="<{:U('guanliyuan',array('gly'=>4))}>">题库管理</a></li>
+<if condition="$j eq 0 || $j eq 7">
+            <li class="pull-center">
+                <form class="navbar-form navbar-left" action="<{:U('project/guanliyuan',array('gly'=>7,'yid'=>$gly))}>">
+                    <div class="form-group">
+                        <input type="text" name="sousuo" id="sousuo2" placeholder="请输入搜索关键词..." class="form-control"/>
+                    </div>
+                    <input type="submit" value="搜索" class="btn btn-info"/>
+                </form>
+            </li>
+    <elseif condition="$j eq 3 || $j eq 8"/>
+    <li class="pull-center">
+        <form class="navbar-form navbar-left" action="<{:U('project/guanliyuan',array('gly'=>8,'yid'=>$gly))}>">
+            <div class="form-group">
+                <input type="text" name="sousuo" id="sousuo" placeholder="请输入搜索关键词..." class="form-control"/>
+            </div>
+            <input type="submit" value="搜索" class="btn btn-info"/>
+        </form>
+    </li>
+    <elseif condition="$j eq 4 || $j eq 9"/>
+    <li class="pull-center">
+        <form class="navbar-form navbar-left" action="<{:U('project/guanliyuan',array('gly'=>9,'yid'=>$gly))}>">
+            <div class="form-group">
+                <input type="text" name="sousuo"  placeholder="请输入搜索关键词..." class="form-control"/>
+            </div>
+            <input type="submit" value="搜索" class="btn btn-info"/>
+        </form>
+    </li>
+</if>
+
+    </ul>
+</div>
+<div class="container">
+
+
+<if condition="$gly eq 0">
+    <h2 style="text-align: center">用户管理</h2>
+    <div class="yhgl container " >
+
+        <table id="rounded-corner" style="margin-left:20% " >
+            <thead>
+            <tr>
+                <th scope="col" class="rounded">姓名</th>
+                <th scope="col" class="rounded">性别</th>
+                <th scope="col" class="rounded">生日</th>
+                <th scope="col" class="rounded">电话</th>
+                <th scope="col" class="rounded">邮箱</th>
+                <th scope="col" class="rounded">QQ</th>
+                <th scope="col" class="rounded">最后修改时间</th>
+                <th scope="col" class="rounded-q4">状态</th>
+            </tr>
+            </thead>
+            <tbody>
+            <foreach name="select" item="se">
+            <tr>
+                <td><{$se.uname}></td>
+                <td><{$se.usex}></td>
+                <td><{$se.ubirthday}></td>
+                <td><{$se.umobile}></td>
+                 <td><{$se.uemail}></td>
+                    <td><{$se.uqq}></td>
+                <td><{$se.ulastupdatetime}></td>
+                    <td>
+                        <if condition="$se.uisvalid eq 0">
+                            <a href="<{:U('zhuangtai',array('uid'=>$se['uid']))}>">不可用</a>
+                            <elseif condition="$se.uisvalid eq 1" />
+                            <a href="<{:U('zhuangtai',array('uid'=>$se['uid']))}>">可用</a>
+                        </if>
+
+                    </td>
+
+            </tr>
+            </foreach>
+            </tbody>
+        </table>
+
+        <hr>
+        <div class="content" style="text-align: center;">
+            <div class="pages"><{$page}></div>
+        </div>
+    </div>
+
+    <elseif condition="$gly eq 1"/>
+
+    <div class="container four">
+        <form id="contact" action="<{:U('project/xiugaiuser')}>" method="post">
+            <h3 style="text-align: center">个人资料修改</h3>
+            <foreach name="chaxun" item="ch">
+                <fieldset>
+                    姓名<input  type="text" name="aname" id="aname" value="<{$ch.aname}>" tabindex="1" required autofocus>
+                </fieldset>
+                <fieldset>
+                    <p>生日</p>
+                    <input  type="date" name="abirthday" id="abirthday" value="<{$ch.abirthday}>" tabindex="2" required>
+                </fieldset>
+                <fieldset>
+                    电话<input  type="text" id="amobile" name="amobile" value="<{$ch.amobile}>" tabindex="3" required>
+                </fieldset>
+                <fieldset>
+                    邮件<input type="text" id="aemail" name="aemail" value="<{$ch.aemail}>" tabindex="4" required>
+                </fieldset>
+                <fieldset>
+                    QQ<input type="text" name="aqq" id="aqq" value="<{$ch.aqq}>" tabindex="5" required>
+                </fieldset>
+                <fieldset>
+                    <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">修改</button>
+                </fieldset>
+            </foreach>
+        </form>
+
+    </div>
+    <elseif condition="$gly eq 2"/>
+<div class="contianer five">
+
+
+    <div class="tab-content" style="text-align: center">
+        <h2>发表知识点</h2>
+        <form action="<{:U('project/xgzsd')}>" method="post" style="text-align: center">
+            <div align="left" style="font-size: 20px">
+               <button class="btn btn-primary btn-lg">标题</button>
+                <input type="text" id="title" name="title" style="width: 25%" class="input-lg">
+
+                <select id="classa" name="classa" style="width: 15%;" class="input-lg">
+                    <foreach name='bselect' item='val'>
+                        <option value="<{$val.bid}>" id="<{$val.bid}>"><{$val.bname}></option>
+                    </foreach>
+                </select>
+                <select name="classb" id="classb" style="width: 15%;" class="input-lg">
+
+                </select>
+
+            <div style="margin-top: 20px">
+                <script id="editor1" name="editor1" type="text/plain"></script>
+            </div>
+
+            <p style="text-align: center">
+                <input type="submit" value=" 添加 " class="btn btn-primary btn-lg">
+            </p>
+            </div>
+        </form>
+
+    </div>
+</div>
+
+
+    <elseif condition="$gly eq 3"/>
+    <h2 style="text-align: center">知识点管理</h2>
+    <div class="yhgl container " >
+        <table id="glzsd" style="margin-left:20% " >
+            <thead>
+            <tr>
+                <th scope="col" class="rounded">标题</th>
+                <th scope="col" class="rounded">类别</th>
+                <th scope="col" class="rounded">修改时间</th>
+                <th scope="col" class="rounded">状态</th>
+                <th scope="col" class="rounded-q4">操作</th>
+            </tr>
+            </thead>
+            <tbody>
+            <foreach name="zse" item="z">
+            <tr>
+
+                    <td><{$z.zbiaoti}></td>
+                    <td><{$z.sname}></td>
+                    <td><{$z.zlastupdatetime}></td>
+                <td>
+                    <if condition="$z.zisvalid eq 0">
+                        <a href="<{:U('ztzsd',array('zid'=>$z['zid']))}>">不可用</a>
+                        <elseif condition="$z.zisvalid eq 1" />
+                        <a href="<{:U('ztzsd',array('zid'=>$z['zid']))}>">可用</a>
+                    </if>
+
+                </td>
+                    <td><a href="<{:U('guanliyuan',array('gly'=>5,'zid'=>$z['zid']))}>" class="ask" style="text-decoration: none">修改</a>
+
+                    </td>
+            </tr>
+            </foreach>
+            </tbody>
+        </table>
+        <hr>
+        <div class="content" style="text-align: center;">
+            <div class="pages"><{$page}></div>
+        </div>
+    </div>
+
+
+    <elseif condition="$gly eq 4"/>
+    <h2 style="text-align: center">题库管理</h2>
+    <div class="yhgl container" >
+            <table id="blist"  style="margin-left:20% ">
+                <thead>
+                <tr>
+                    <th scope="col" class="rounded">标题</th>
+                    <th scope="col" class="rounded">最后修改时间</th>
+                    <th scope="col" class="rounded">类别</th>
+                    <th scope="col" class="rounded">状态</th>
+                    <th scope="col" class="rounded">操作</th>
+                </tr>
+                </thead>
+               <tbody>
+               <foreach name="lxtse" item="lx">
+               <tr>
+                   <td>
+                       <a href="<{:U('guanliyuan',array('gly'=>6,'tid'=>$lx['tid']))}>"  style="text-decoration: none">
+                           <{:mb_substr($lx[wenti],0,10)}>...
+                       </a>
+                   </td>
+                   <td><{$lx.tlastupdatetime}></td>
+                   <td><{$lx.bname}></td>
+                   <td>   <if condition="$lx.tisvalid eq 0">
+                       <a href="<{:U('swt',array('tid'=>$lx['tid']))}>">不可用</a>
+                       <elseif condition="$lx.tisvalid eq 1" />
+                       <a href="<{:U('swt',array('tid'=>$lx['tid']))}>">可用</a>
+                   </if>
+                   </td>
+                   <td> <a href="<{:U('guanliyuan',array('gly'=>6,'tid'=>$lx['tid']))}>" id="<{$lx.tid}>" style="text-decoration: none">
+                      修改
+                   </a></td>
+               </tr>
+                </foreach>
+               </tbody>
+
+           </table>
+
+
+
+    </div>
+        <div class="content" style="text-align: center;">
+            <div class="pages"><{$page}></div>
+        </div>
+    <elseif condition="$gly eq 5"/>
+    <div class="contianer ceshi">
+        <div class="tab-content" style="text-align: center">
+            <h2>修改知识点</h2>
+            <form action="<{:U('project/xiugaizsd')}>" method="post" style="text-align: center">
+
+                <div align="left" style="font-size: 20px">
+                    <button class="btn btn-primary btn-lg">标题</button>
+                    <foreach name="select" item="se">
+                    <input type="text" id="titlei" value="<{$se.zbiaoti}>" name="title" style="width: 25%" class="input-lg">
+                    </foreach>
+
+                    <select name="neibie" id="neibie" style="width: 15%;" class="input-lg">
+                        <foreach name="scla" item="sc">
+                        <option value="<{$sc.sid}>" id="<{$sc.sid}>"><{$sc.sname}></option>
+                        </foreach>
+                    </select>
+
+                </div>
+                <foreach name="select" item="se">
+                    <!--<{:htmlspecialchars_decode($se[zcontent])}>-->
+
+
+             <div style="margin-top: 20px">
+                    <script id="editor2"  name="editor2" type="text/plain">
+    <{:htmlspecialchars_decode($se['zcontent']);}>
+                    </script>
+                </div>
+                </foreach>
+                <p style="">
+                    <input type="submit" value=" 确认修改 " class="btn btn-primary btn-lg">
+                </p>
+
+            </form>
+
+        </div>
+    </div>
+    <elseif condition="$gly eq 6"/>
+    <div class="container six">
+        <form id="paword" action="<{:U('project/xiugaiwt')}>" method="post">
+            <h3 style="text-align: center">问题修改</h3>
+            <foreach name="lcx" item="lc">
+            <fieldset>
+                <!--问题<input  type="text" value="<{$lc.wenti}>" tabindex="1" required autofocus>-->
+ <p> 问题</p>
+                <textarea name="wenti"   id="wenti" cols="30" rows="10"><{$lc.wenti}></textarea>
+            </fieldset>
+            <fieldset>
+                选项 A<input  type="text" name="one" id="one" value="<{$lc.tone}>" tabindex="2" required>
+            </fieldset>
+            <fieldset>
+                选项 B<input  type="text"  name="two" id="two"  value="<{$lc.ttwo}>" tabindex="3" required>
+            </fieldset>
+            <fieldset>
+                选项 C<input type="text" id="three" name="three" value="<{$lc.tthree}>" tabindex="4" required>
+            </fieldset>
+                选项 D<fieldset><input type="text" id="four" name="four" value="<{$lc.tfour}>" tabindex="4" required></fieldset>
+            <fieldset>
+                正确答案
+                <select name="daan" id="daan">
+                    <option value="<{$lc.tdaan}>"><{$lc.tdaan}></option>
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                    <option value="D">D</option>
+                </select>
+            </fieldset>
+            </foreach>
+            <fieldset>
+                <button name="submit" type="submit" id="powersubmit" data-submit="...Sending">修改</button>
+            </fieldset>
+        </form>
+    </div>
+    <elseif condition="$gly eq 7" />
+    <h2 style="text-align: center">用户管理</h2>
+    <div class="yhgl container " >
+
+        <table id="rounded" style="margin-left:20% " >
+            <thead>
+            <tr>
+                <th scope="col" class="rounded">姓名</th>
+                <th scope="col" class="rounded">性别</th>
+                <th scope="col" class="rounded">生日</th>
+                <th scope="col" class="rounded">电话</th>
+                <th scope="col" class="rounded">邮箱</th>
+                <th scope="col" class="rounded">QQ</th>
+                <th scope="col" class="rounded">最后修改时间</th>
+                <th scope="col" class="rounded-q4">状态</th>
+            </tr>
+            </thead>
+            <tbody>
+            <foreach name="uss" item="us">
+                <tr>
+                    <td><{$us.uname}></td>
+                    <td><{$us.usex}></td>
+                    <td><{$us.ubirthday}></td>
+                    <td><{$us.umobile}></td>
+                    <td><{$us.uemail}></td>
+                    <td><{$us.uqq}></td>
+                    <td><{$us.ulastupdatetime}></td>
+                    <td>
+                        <if condition="$us.uisvalid eq 0">
+                            <a href="<{:U('sousuo',array('uid'=>$us['uid']))}>">不可用</a>
+                            <elseif condition="$us.uisvalid eq 1" />
+                            <a href="<{:U('sousuo',array('uid'=>$us['uid']))}>">可用</a>
+                        </if>
+
+                    </td>
+                </tr>
+            </foreach>
+            </tbody>
+        </table>
+
+        <hr>
+        <!--<div class="content" style="text-align: center;">-->
+            <!--<div class="pages"><{$page}></div>-->
+        <!--</div>-->
+    </div>
+    <elseif condition="$gly eq 8"/>
+    <h2 style="text-align: center">知识点管理</h2>
+    <div class="yhgl container " >
+
+        <table id="szsd" style="margin-left:20% " >
+            <thead>
+            <tr>
+                <th scope="col" class="rounded">标题</th>
+                <th scope="col" class="rounded">类别</th>
+                <th scope="col" class="rounded">修改时间</th>
+                <th scope="col" class="rounded">状态</th>
+                <th scope="col" class="rounded-q4">操作</th>
+            </tr>
+            </thead>
+            <tbody>
+            <foreach name="szsd" item="sz">
+                <tr>
+
+                    <td><{$sz.zbiaoti}></td>
+                    <td><{$sz.sname}></td>
+                    <td><{$sz.zlastupdatetime}></td>
+                    <td><if condition="$sz.zisvalid eq 0">
+                        <a href="<{:U('sozsd',array('zid'=>$sz['zid']))}>">不可用</a>
+                        <elseif condition="$sz.zisvalid eq 1" />
+                        <a href="<{:U('sozsd',array('zid'=>$sz['zid']))}>">可用</a>
+                    </if></td>
+                    <td><a href="<{:U('guanliyuan',array('gly'=>5,'zid'=>$sz['zid']))}>" class="ask" style="text-decoration: none">修改</a>
+                    </td>
+                </tr>
+            </foreach>
+            </tbody>
+        </table>
+        <hr>
+        <div class="content" style="text-align: center;">
+            <div class="pages"><{$page}></div>
+        </div>
+    </div>
+    <elseif condition="$gly eq 9"/>
+    <h2 style="text-align: center">题库管理</h2>
+    <div class="yhgl container" >
+        <table id="wtcss"  style="margin-left:20% ">
+            <thead>
+            <tr>
+                <th scope="col" class="rounded">标题</th>
+                <th scope="col" class="rounded">最后修改时间</th>
+                <th scope="col" class="rounded">类别</th>
+                <th scope="col" class="rounded">状态</th>
+                <th scope="col" class="rounded">操作</th>
+            </tr>
+            </thead>
+            <tbody>
+            <foreach name="sswt" item="st">
+                <tr>
+                    <td>
+                        <a href="<{:U('guanliyuan',array('gly'=>6,'tid'=>$st['tid']))}>"  style="text-decoration: none">
+                            <{:mb_substr($st[wenti],0,10)}>...
+                        </a>
+                    </td>
+                    <td><{$st.tlastupdatetime}></td>
+                    <td><{$st.bname}></td>
+                    <td>   <if condition="$st.tisvalid eq 0">
+                        <a href="<{:U('souwt',array('tid'=>$st['tid']))}>">不可用</a>
+                        <elseif condition="$st.tisvalid eq 1" />
+                        <a href="<{:U('souwt',array('tid'=>$st['tid']))}>">可用</a>
+                    </if>
+                    <td> <a href="<{:U('guanliyuan',array('gly'=>6,'tid'=>$st['tid']))}>" style="text-decoration: none">
+                        修改
+                    </a></td>
+                </tr>
+            </foreach>
+            </tbody>
+
+        </table>
+
+
+
+    </div>
+</if>
+
+
+
+</div>
+
+
+
+
+
+
+<script src="__PUBLIC__/js/jquery-1.12.2.min.js"></script>
+<script src="__PUBLIC__/js/bootstrap.min.js"></script>
+    <script>
+        var ue1 = UE.getEditor('editor1');
+        var uek = UE.getEditor('editor2');
+        ue1.ready(function () {
+
+        });
+
+        $(document).ready(function(){
+            //一级分类联动二级分类
+            $("#classa").change(function(){
+                var val=$(this).val();
+//                alert(val);
+                $("#classb").load("__URL__/classa",{data:val});
+            }) });
+
+    </script>
+</body>
+</html>

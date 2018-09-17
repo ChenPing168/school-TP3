@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ajax方式加载显示用户信息</title>
+    <link rel="stylesheet" href="/Public/css/bootstrap.css">
+    <script src="/Public/js/jquery.min.js"></script>
+    <script src="/Public/js/bootstrap.js"></script>
+    <style>
+        div.div1>div.userImg>img{
+            width: 120px;
+            height: 90px;
+        }
+        div.div1>div{
+            font-size: 20px;
+        }
+        .div2{
+            position: fixed;
+            top: 100px;
+            left: 600px;
+            width: 300px;
+            height: 300px;
+            display: none;
+            /*background-color: green;*/
+        }
+        ul>li{
+            text-align: center;
+            list-style: none;
+            border: 1px solid #808080;
+            line-height: 50px;
+            height: 50px;
+            background-color: #dcdcdc;
+            font-weight: bold;
+        }
+        ul>li:first-child{
+            border-radius: 50%;
+            background-color: aquamarine;
+            margin-bottom: 5px;
+        }
+        ul>li:nth-child(2){
+            border-top-left-radius:5px ;
+            border-top-right-radius:5px ;
+        }
+
+
+    </style>
+</head>
+<body>
+<div class="container" id="usersinfo">
+    <h2>显示所有用户信息</h2>
+    <h3> <a href="<{:u('userinfo')}>">返回</a></h3>
+
+    <foreach name="data" item="vo">
+        <div class="div1">
+            <div class="userImg" >
+                <a  onclick="test()" id="showinfo" href="<{:U('showUserByAjax')}>?id=<{$vo.uid}>">
+                    <img id="tu1"  src="<{$vo.uphoto}>" alt="用户图片" width="120" height="90"/>
+                </a>
+            </div>
+            <div id="uid">编号： <{$vo.uid}></div>
+            <div>用户名： <{$vo.uname}></div>
+            <div>性别： <{$vo.usex}></div>
+            <div>联系电话：<{$vo.umobile}></div>
+            <div>注册时间：<{$vo.uregtime}></div>
+            <div>最后修改时间：<{$vo.ulastupdatetime}></div>
+        </div>
+   </foreach>
+
+
+
+    <div class="div2" id="ii">
+        <ul>
+            <li>用户信息</li>
+            <li >姓名：<{$datas['uname']}></li>
+            <li >头像：<img src="<{$datas['uphoto']}>" alt="" width="84px"/></li>
+            <li >性别：<{$datas['usex']}></li>
+            <li >电话号码：<{$datas['umobile']}></li>
+            <li >注册时间：<{$datas['uregtime']}></li>
+            <li >最后修改时间：<{$datas['ulastupdatetime']}></li>
+        </ul>
+    </div>
+
+</div>
+
+<script>
+    function test(){
+        document.getElementById('ii').style="display:block";
+    }
+    // 模拟时的简单计数器，默认为0，到10条数据后终止
+    var num=0;
+    // jQuery 初始化页面后加载函数
+    $(function () {
+        // 添加窗口的滚动事件函数
+        $(window).scroll(function () {
+            //$(window).scrollTop()这个方法是当前滚动条滚动的距离
+            //$(window).height()获取当前窗体的高度
+            //$(document).height()获取当前文档的高度
+            // 10代表的是一个预留或者叫预设值
+            if ((10+$(window).scrollTop()) >= ($(document).height() - $(window).height())) {
+                //当底部基本距离+滚动的高度〉=文档的高度-窗体的高度时；
+                //我们需要去异步加载数据了
+
+                // 测试用模拟数据
+                if(num<1){
+                    var info = ' <foreach name="data1" item="vo">' +
+                            '<div class="div1">' +
+                            '<div class="userImg">' +
+                            '<a  onclick="test()" id="showinfo" href="<{:U("showUserByAjax")}>?id=<{$vo.uid}>">' +
+                                    '<img id="tu1"  src="<{$vo.uphoto}>" alt="用户图片" width="120" height="90"/>'+
+                            '</a>'+
+                            '</div><div>用户名： <{$vo.uname}></div>' +
+                            '<div>性别：  <{$vo.usex}></div>' +
+                            '<div>联系电话： <{$vo.umobile}>' +
+                            '<div>注册时间：<{$vo.uregtime}>' +
+                            '<div>最后修改时间：<{$vo.ulastupdatetime}>' +
+                            '</div>' +
+                            '</div>'+
+                            '</foreach>';
+                    $("#usersinfo").append(info);
+                }else if(num==1) {
+                    $("#usersinfo").append("<hr><div style='text-align: center'>数据加载完毕</div>");
+                }else {
+                    return null;
+                }
+                num++;
+            }
+
+        });
+    });
+
+</script>
+
+</body>
+</html>

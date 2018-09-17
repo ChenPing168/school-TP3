@@ -1,0 +1,36 @@
+[ 2017-11-16T09:24:52+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.021736s ]
+ERR: 无法加载模块:Favicon
+
+[ 2017-11-16T13:36:11+08:00 ] 127.0.0.1 /public/images/favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001034s ]
+ERR: 无法加载模块:Public
+
+[ 2017-11-16T13:36:29+08:00 ] 127.0.0.1 /public/images/tu2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004985s ]
+ERR: 无法加载模块:Public
+
+[ 2017-11-16T13:36:33+08:00 ] 127.0.0.1 /public/images/tu2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001147s ]
+ERR: 无法加载模块:Public
+
+[ 2017-11-16T13:37:13+08:00 ] 127.0.0.1 /public/images/tu2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000972s ]
+ERR: 无法加载模块:Public
+
+[ 2017-11-16T13:37:52+08:00 ] 127.0.0.1 /public/images/122087.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001531s ]
+ERR: 无法加载模块:Public
+

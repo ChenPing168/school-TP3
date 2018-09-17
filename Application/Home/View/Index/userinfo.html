@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>主页面</title>
+    <link rel="stylesheet" href="/public/css/bootstrap.min.css"/>
+    <script src="/Public/js/jquery.min.js"></script>
+    <style>
+
+        .row {
+            position: absolute;
+            margin-left: 40px;
+            margin-top: 80px;
+            width: 1100px;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="col-md-2">
+            <a href="<{:U('upphoto')}>"><img src="<{$uphoto}>" class="img-circle" alt="" width="120"/></a>
+        </div>
+        <h3 class="text-warnning">欢迎你:<{$name}></h3>
+        <h4><a href="<{:u('zhuce')}>">注册</a>&nbsp;||&nbsp;<a href="<{:u('test')}>">登陆</a></h4>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="thumbnail">
+                    <a href=""><img src="/public/image/61999.jpg" width="200"  alt=""/></a>
+                    <div class="caption"  style="text-align: center;">
+                        <h3>修改个人信息</h3>
+
+                        <button class="btn btn-primary"><a href="<{:U('update')}>" style="color:white">查看</a></button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="thumbnail">
+                    <a href=""><img src="/public/image/113714.jpg" width="200"  alt=""/></a>
+                    <div class="caption"  style="text-align: center;">
+                        <h3>添加联系人</h3>
+
+                        <button class="btn btn-primary"><a href="<{:U('uplook')}>" style="color:white">查看</a></button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="thumbnail">
+                    <a href=""><img src="/public/image/122087.jpg" width="200"  alt=""/></a>
+                    <div class="caption"  style="text-align: center;">
+                        <h3>查看联系人</h3>
+                        <button class="btn btn-primary"><a href="<{:U('lianxiren')}>" style="color:white">查看</a></button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="thumbnail">
+                    <a href=""><img src="/public/image/122087.jpg" width="200"  alt=""/></a>
+                    <div class="caption"  style="text-align: center;">
+                        <h3>上传图片</h3>
+                        <button class="btn btn-primary"><a href="<{:U('tupian')}>" style="color:white">查看</a></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="thumbnail">
+                    <a href=""><img src="/public/image/87030.jpg" width="200"  alt=""/></a>
+                    <div class="caption"  style="text-align: center;">
+                        <h3>查看图片</h3>
+                        <button class="btn btn-primary"><a href="<{:U('showUserByAjax')}>" style="color:white">查看</a></button>
+                    </div>
+                </div>
+            </div>
+
+            </div>
+            </div>
+        </div>
+</body>
+</html>

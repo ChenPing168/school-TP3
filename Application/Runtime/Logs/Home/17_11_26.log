@@ -1,0 +1,73 @@
+[ 2017-11-26T20:20:16+08:00 ] 127.0.0.1 /Home/Test/yuedugengduo.html?bid=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.014571s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.010474s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010683s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001620s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001809s ]
+
+[ 2017-11-26T20:20:17+08:00 ] 127.0.0.1 /Home/Test/yuedugengduo.html?bid=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000894s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001018s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001216s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001534s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001927s ]
+
+[ 2017-11-26T20:20:19+08:00 ] 127.0.0.1 /Home/Test/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000915s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000917s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001074s ]
+SQL: SELECT * FROM `user` WHERE ( uid=1 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0012s ]
+SQL: SELECT * FROM blog b,user u WHERE ( b.uid=u.uid and bisvalid=1 ) LIMIT 0,10   [ RunTime:0.0009s ]
+SQL: SELECT * FROM `blogclass`  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0010s ]
+SQL: SELECT b.bid,b.bbiaoti,count(ub.bid) ubnum FROM blog b,userblog ub WHERE ( b.bid=ub.bid and ub.isvalid=1 ) GROUP BY b.bid ORDER BY ubnum desc  [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `pinglun` [ RunTime:0.0012s ]
+SQL: SELECT b.bid,b.bbiaoti,count(p.pid) pnum FROM pinglun p,blog b WHERE ( p.bid=b.bid and p.pstatus=1 and p.pisvalid=1  ) GROUP BY b.bid ORDER BY pnum desc  [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000091s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000229s ]
+NOTIC: [8] Undefined variable: re D:\PHP\wamp64\www\TP\Application\Runtime\Cache\Home\a50a329c8c4705720135011af4b7393b.php 第 36 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.066730s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.066880s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.009641s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009818s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002636s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002889s ]
+
+[ 2017-11-26T20:20:25+08:00 ] 127.0.0.1 /Home/Test/yuedugengduo.html?gengduo=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000975s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001353s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001568s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001511s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001691s ]
+
+[ 2017-11-26T20:20:28+08:00 ] 127.0.0.1 /Home/Test/yuedugengduo.html?gengduo=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000899s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000999s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001179s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001048s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001235s ]
+

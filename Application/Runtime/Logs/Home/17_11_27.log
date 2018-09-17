@@ -1,0 +1,1265 @@
+[ 2017-11-27T11:22:30+08:00 ] 127.0.0.1 /Home/Test/loginandreg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.014915s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.016713s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.016871s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000082s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000254s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.059283s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.059431s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.016835s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.016988s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.021777s ]
+INFO: [ app_end ] --END-- [ RunTime:0.021940s ]
+
+[ 2017-11-27T11:22:35+08:00 ] 127.0.0.1 /Home/Test/panduanlog.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000855s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001005s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001123s ]
+SQL: SELECT * FROM `user` WHERE ( uloginname='小刘'and uisvalid='1'  ) LIMIT 1   [ RunTime:0.0031s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000172s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019593s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019739s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000846s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000948s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000980s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001088s ]
+
+[ 2017-11-27T11:22:37+08:00 ] 127.0.0.1 /Home/Test/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000768s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000830s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000978s ]
+SQL: SELECT * FROM `user` WHERE ( uid=1 ) LIMIT 1   [ RunTime:0.0031s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0032s ]
+SQL: SELECT * FROM blog b,user u WHERE ( b.uid=u.uid and bisvalid=1 ) LIMIT 0,10   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `blogclass`  [ RunTime:0.0028s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0006s ]
+SQL: SELECT b.bid,b.bbiaoti,count(ub.bid) ubnum FROM blog b,userblog ub WHERE ( b.bid=ub.bid and ub.isvalid=1 ) GROUP BY b.bid ORDER BY ubnum desc  [ RunTime:0.0373s ]
+SQL: SHOW COLUMNS FROM `pinglun` [ RunTime:0.0032s ]
+SQL: SELECT b.bid,b.bbiaoti,count(p.pid) pnum FROM pinglun p,blog b WHERE ( p.bid=b.bid and p.pstatus=1 and p.pisvalid=1  ) GROUP BY b.bid ORDER BY pnum desc  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000073s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000185s ]
+NOTIC: [8] Undefined variable: re D:\PHP\wamp64\www\TP\Application\Runtime\Cache\Home\a50a329c8c4705720135011af4b7393b.php 第 36 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036339s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036502s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000746s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000855s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000887s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001026s ]
+
+[ 2017-11-27T11:22:41+08:00 ] 127.0.0.1 /Home/Test/userinfo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000770s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000795s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000911s ]
+SQL: SELECT * FROM `user` WHERE ( uisvalid='1' AND uid=1 ) LIMIT 1   [ RunTime:0.0030s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000117s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000255s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.060630s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.060763s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000624s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000736s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000821s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000930s ]
+
+[ 2017-11-27T11:22:47+08:00 ] 127.0.0.1 /Home/Test/userinfo.html?caozuo=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000868s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001287s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001416s ]
+SQL: SELECT * FROM `blog` WHERE ( bisvalid='1' AND bstatus='1' 
+        AND uid=1 )  [ RunTime:0.0029s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000145s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000300s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026590s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026724s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000699s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000843s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000918s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001078s ]
+
+[ 2017-11-27T11:22:50+08:00 ] 127.0.0.1 /Home/Test/xiugaiboke_XS.html?bid=4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001090s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000718s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000844s ]
+SQL: SELECT * FROM `blogclass`  [ RunTime:0.0029s ]
+SQL: SELECT * FROM `blog` WHERE ( bisvalid='1' AND bstatus='1' and bid='4'
+        AND uid=1 )  [ RunTime:0.0030s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000095s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000275s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034117s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034313s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000606s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000716s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000770s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000887s ]
+
+[ 2017-11-27T11:22:50+08:00 ] 127.0.0.1 /index.php/Home/Index/ueditup?action=config&&noCache=1511752970650
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000870s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000757s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000897s ]
+NOTIC: [2] file_get_contents(./Application/Common/Conf/ueditconfig.json): failed to open stream: No such file or directory D:\PHP\wamp64\www\TP\Application\Home\Controller\IndexController.class.php 第 8 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000753s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000877s ]
+
+[ 2017-11-27T11:23:03+08:00 ] 127.0.0.1 /index.php/Home/Index/ueditup?action=&start=0&noCache=1511752983838
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000725s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000757s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000871s ]
+NOTIC: [2] file_get_contents(./Application/Common/Conf/ueditconfig.json): failed to open stream: No such file or directory D:\PHP\wamp64\www\TP\Application\Home\Controller\IndexController.class.php 第 8 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000806s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000923s ]
+
+[ 2017-11-27T11:23:11+08:00 ] 127.0.0.1 /Home/Test/xiugaiboke_QR.html?bid=4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000070s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000886s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000896s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001053s ]
+SQL: UPDATE `blog` SET `uid`='1',`bcid`='1',`bbiaoti`='AJAX-get-post：',`bneirong`='&lt;p&gt;$id &amp;nbsp; &amp;nbsp;= &amp;nbsp;$_GET[&amp;#39;id&amp;#39;]; // 获取get变量
+$name &amp;nbsp;= &amp;nbsp;$_POST[&amp;#39;name&amp;#39;]; &amp;nbsp;// 获取post变量
+$value = &amp;nbsp;$_SESSION[&amp;#39;var&amp;#39;]; // 获取session变量
+$name &amp;nbsp;= &amp;nbsp;$_COOKIE[&amp;#39;name&amp;#39;]; // 获取cookie变量
+$file &amp;nbsp;= &amp;nbsp;$_SERVER[&amp;#39;PHP_SELF&amp;#39;]; // 获取server变量
+ 建议:
+echo I(&amp;#39;get.id&amp;#39;); // 相当于 $_GET[&amp;#39;id&amp;#39;]
+I(&amp;#39;get.&amp;#39;); // 获取整个$_GET 数组
+echo I(&amp;#39;get.name&amp;#39;); // 相当于 $_GET[&amp;#39;name&amp;#39;]
+// 采用htmlspecialchars方法对$_GET[&amp;#39;name&amp;#39;] 进行过滤，如果不存在则返回空字符串
+echo I(&amp;#39;get.name&amp;#39;,&amp;#39;&amp;#39;,&amp;#39;htmlspecialchars&amp;#39;);&lt;/p&gt;&lt;p style=&quot;display:none;&quot;&gt;&lt;br/&gt;&lt;/p&gt;',`btime`='2017-11-27 11:23:11',`blastupdatetime`='2017-11-27 11:23:11',`bstatus`='1' WHERE ( bid=4 ) [ RunTime:0.0302s ]
+
+[ 2017-11-27T11:23:11+08:00 ] 127.0.0.1 /Home/Test/userinfo/caozuo/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000756s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001108s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001273s ]
+SQL: SELECT * FROM `blog` WHERE ( bisvalid='1' AND bstatus='1' 
+        AND uid=1 )  [ RunTime:0.0033s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000112s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000267s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029750s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029926s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000687s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000789s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001042s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001194s ]
+
+[ 2017-11-27T11:23:22+08:00 ] 127.0.0.1 /Home/Test/userinfo/caozuo/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000784s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000722s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000835s ]
+SQL: SELECT * FROM `blog` WHERE ( bisvalid='1' AND bstatus='1' 
+        AND uid=1 )  [ RunTime:0.0029s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000103s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000213s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026763s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026910s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000713s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000818s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001020s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001184s ]
+
+[ 2017-11-27T11:23:25+08:00 ] 127.0.0.1 /Home/Test/xiugaiboke_XS.html?bid=4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000731s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000761s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000873s ]
+SQL: SELECT * FROM `blogclass`  [ RunTime:0.0027s ]
+SQL: SELECT * FROM `blog` WHERE ( bisvalid='1' AND bstatus='1' and bid='4'
+        AND uid=1 )  [ RunTime:0.0028s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000088s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000253s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017611s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017816s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000697s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000821s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000777s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000896s ]
+
+[ 2017-11-27T11:23:25+08:00 ] 127.0.0.1 /index.php/Home/Index/ueditup?action=config&&noCache=1511753005727
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001151s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000797s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000943s ]
+NOTIC: [2] file_get_contents(./Application/Common/Conf/ueditconfig.json): failed to open stream: No such file or directory D:\PHP\wamp64\www\TP\Application\Home\Controller\IndexController.class.php 第 8 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000729s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000861s ]
+
+[ 2017-11-27T11:23:58+08:00 ] 127.0.0.1 /index.php/Home/Index/ueditup?action=&start=0&noCache=1511753038127
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000856s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001166s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001303s ]
+NOTIC: [2] file_get_contents(./Application/Common/Conf/ueditconfig.json): failed to open stream: No such file or directory D:\PHP\wamp64\www\TP\Application\Home\Controller\IndexController.class.php 第 8 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001004s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001115s ]
+
+[ 2017-11-27T11:41:24+08:00 ] 127.0.0.1 /Home/Test/ajaxblog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000763s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000956s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001080s ]
+ERR: 非法操作:ajaxblog
+
+[ 2017-11-27T11:41:34+08:00 ] 127.0.0.1 /Home/Test/ajaxblog.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000803s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001137s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001293s ]
+ERR: 非法操作:ajaxblog
+
+[ 2017-11-27T11:41:55+08:00 ] 127.0.0.1 /Home/blog/ajaxblog.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000750s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000939s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001111s ]
+ERR: 无法加载控制器:Blog
+
+[ 2017-11-27T11:42:30+08:00 ] 127.0.0.1 /Home/blogs/ajaxblog.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000824s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001405s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001624s ]
+ERR: 无法加载控制器:Blogs
+
+[ 2017-11-27T11:42:31+08:00 ] 127.0.0.1 /Home/blogs/ajaxblog.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000861s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000854s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+ERR: 无法加载控制器:Blogs
+
+[ 2017-11-27T11:42:35+08:00 ] 127.0.0.1 /Home/index/mytest
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000826s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000793s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000906s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000078s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000270s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025058s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025180s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000761s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000864s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001220s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001379s ]
+
+[ 2017-11-27T11:42:36+08:00 ] 127.0.0.1 /Home/Index/yanzhengma.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001195s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001362s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001548s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001194s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001358s ]
+
+[ 2017-11-27T11:43:35+08:00 ] 127.0.0.1 /Home/blogs/ajaxblog.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000797s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000771s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000889s ]
+ERR: 无法加载控制器:Blogs
+
+[ 2017-11-27T11:43:37+08:00 ] 127.0.0.1 /Home/blogs/ajaxblog.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001325s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000890s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001011s ]
+ERR: 无法加载控制器:Blogs
+
+[ 2017-11-27T11:43:38+08:00 ] 127.0.0.1 /Home/blogs/ajaxblog.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001154s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001222s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001431s ]
+ERR: 无法加载控制器:Blogs
+
+[ 2017-11-27T11:43:38+08:00 ] 127.0.0.1 /Home/blogs/ajaxblog.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000653s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000714s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000839s ]
+ERR: 无法加载控制器:Blogs
+
+[ 2017-11-27T11:43:38+08:00 ] 127.0.0.1 /Home/blogs/ajaxblog.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000934s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001022s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001183s ]
+ERR: 无法加载控制器:Blogs
+
+[ 2017-11-27T11:43:39+08:00 ] 127.0.0.1 /Home/blogs/ajaxblog.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000828s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000920s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001059s ]
+ERR: 无法加载控制器:Blogs
+
+[ 2017-11-27T11:43:39+08:00 ] 127.0.0.1 /Home/blogs/ajaxblog.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000769s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000786s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000906s ]
+ERR: 无法加载控制器:Blogs
+
+[ 2017-11-27T11:43:39+08:00 ] 127.0.0.1 /Home/blogs/ajaxblog.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000693s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000868s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000987s ]
+ERR: 无法加载控制器:Blogs
+
+[ 2017-11-27T11:43:39+08:00 ] 127.0.0.1 /Home/blogs/ajaxblog.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000729s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000693s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000814s ]
+ERR: 无法加载控制器:Blogs
+
+[ 2017-11-27T11:43:39+08:00 ] 127.0.0.1 /Home/blogs/ajaxblog.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001119s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000771s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000892s ]
+ERR: 无法加载控制器:Blogs
+
+[ 2017-11-27T11:43:44+08:00 ] 127.0.0.1 /Home/blog/ajaxblog.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000831s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000931s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001057s ]
+ERR: 无法加载控制器:Blog
+
+[ 2017-11-27T11:45:17+08:00 ] 127.0.0.1 /Home/index/mytest
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000737s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000906s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001033s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000196s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010212s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010373s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001094s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001297s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001048s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001205s ]
+
+[ 2017-11-27T11:45:17+08:00 ] 127.0.0.1 /Home/Index/yanzhengma.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001017s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001043s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001281s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001045s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001265s ]
+
+[ 2017-11-27T11:45:31+08:00 ] 127.0.0.1 /Home/blog/ajaxblog.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000841s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000791s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000908s ]
+ERR: 无法加载控制器:Blog
+
+[ 2017-11-27T11:45:35+08:00 ] 127.0.0.1 /Home/blogs/ajaxblog.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000985s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000922s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001092s ]
+ERR: 无法加载控制器:Blogs
+
+[ 2017-11-27T13:09:20+08:00 ] 127.0.0.1 /Home/blogs/ajaxblog.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001221s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001299s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001482s ]
+ERR: 无法加载控制器:Blogs
+
+[ 2017-11-27T13:09:21+08:00 ] 127.0.0.1 /Home/blogs/ajaxblog.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000726s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000829s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000992s ]
+ERR: 无法加载控制器:Blogs
+
+[ 2017-11-27T13:09:21+08:00 ] 127.0.0.1 /Home/blogs/ajaxblog.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001058s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000655s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000774s ]
+ERR: 无法加载控制器:Blogs
+
+[ 2017-11-27T13:09:22+08:00 ] 127.0.0.1 /Home/blogs/ajaxblog.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001150s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000825s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001002s ]
+ERR: 无法加载控制器:Blogs
+
+[ 2017-11-27T13:09:36+08:00 ] 127.0.0.1 /Home/blogs/ajaxBlog.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001294s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001530s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001796s ]
+ERR: 无法加载控制器:Blogs
+
+[ 2017-11-27T13:10:13+08:00 ] 127.0.0.1 /Home/blogs/ajaxBlog.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000985s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000755s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000871s ]
+ERR: 无法加载控制器:Blogs
+
+[ 2017-11-27T13:10:50+08:00 ] 127.0.0.1 /Home/blogs/ajaxBlog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000758s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000902s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001024s ]
+ERR: 无法加载控制器:Blogs
+
+[ 2017-11-27T13:10:56+08:00 ] 127.0.0.1 /Home/blog/ajaxBlog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000746s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000831s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000948s ]
+ERR: 无法加载控制器:Blog
+
+[ 2017-11-27T13:12:02+08:00 ] 127.0.0.1 /Home/blog/ajaxBlog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001027s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001114s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001273s ]
+ERR: 无法加载控制器:Blog
+
+[ 2017-11-27T13:12:12+08:00 ] 127.0.0.1 /Home/blogs/ajaxBlog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000823s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001026s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001255s ]
+ERR: 无法加载控制器:Blogs
+
+[ 2017-11-27T13:16:21+08:00 ] 127.0.0.1 /Home/blogajax/ajaxBlog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000839s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001239s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001400s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'b.btitle' in 'field list'
+
+[ 2017-11-27T13:16:48+08:00 ] 127.0.0.1 /Home/blogajax/ajaxBlog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000840s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000848s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000971s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'b.btitle' in 'field list'
+
+[ 2017-11-27T13:16:49+08:00 ] 127.0.0.1 /Home/blogajax/ajaxBlog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000706s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001077s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001286s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'b.btitle' in 'field list'
+
+[ 2017-11-27T13:16:49+08:00 ] 127.0.0.1 /Home/blogajax/ajaxBlog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000749s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000917s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001104s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'b.btitle' in 'field list'
+
+[ 2017-11-27T13:16:50+08:00 ] 127.0.0.1 /Home/blogajax/ajaxBlog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000871s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000899s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001094s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'b.btitle' in 'field list'
+
+[ 2017-11-27T13:16:50+08:00 ] 127.0.0.1 /Home/blogajax/ajaxBlog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000907s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000849s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000993s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'b.btitle' in 'field list'
+
+[ 2017-11-27T13:16:50+08:00 ] 127.0.0.1 /Home/blogajax/ajaxBlog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001151s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000744s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000869s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'b.btitle' in 'field list'
+
+[ 2017-11-27T13:16:50+08:00 ] 127.0.0.1 /Home/blogajax/ajaxBlog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001015s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000990s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001201s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'b.btitle' in 'field list'
+
+[ 2017-11-27T13:16:52+08:00 ] 127.0.0.1 /Home/blogajax/ajaxBlog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000853s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000858s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000978s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'b.btitle' in 'field list'
+
+[ 2017-11-27T13:17:21+08:00 ] 127.0.0.1 /Home/blogajax/ajaxBlog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001086s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000988s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001202s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'b.btitle' in 'field list'
+
+[ 2017-11-27T13:17:23+08:00 ] 127.0.0.1 /Home/blogajax/ajaxBlog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000797s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001230s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001447s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'b.btitle' in 'field list'
+
+[ 2017-11-27T13:18:25+08:00 ] 127.0.0.1 /Home/blogajax/ajaxBlog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000763s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001051s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001168s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'b.bcreattime' in 'order clause'
+
+[ 2017-11-27T13:18:26+08:00 ] 127.0.0.1 /Home/blogajax/ajaxBlog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000921s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000751s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000891s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'b.bcreattime' in 'order clause'
+
+[ 2017-11-27T13:19:10+08:00 ] 127.0.0.1 /Home/blogajax/ajaxBlog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001038s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000829s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000974s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'b.chuangjiantime' in 'order clause'
+
+[ 2017-11-27T13:19:11+08:00 ] 127.0.0.1 /Home/blogajax/ajaxBlog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000740s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000915s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001085s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'b.chuangjiantime' in 'order clause'
+
+[ 2017-11-27T13:19:29+08:00 ] 127.0.0.1 /Home/blogajax/ajaxBlog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000643s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000729s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000848s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'b.chuangjian' in 'order clause'
+
+[ 2017-11-27T13:20:29+08:00 ] 127.0.0.1 /Home/blogajax/ajaxBlog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001025s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001036s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001159s ]
+SQL:  SELECT b.bid, bc.bcname, u.uid, u.uname, b.bbiaoti,b.bstatus, b.bisvalid
+          FROM blog b JOIN USER u ON b.uid=u.uid
+           JOIN blogclass bc ON b.bcid=bc.bcid
+          ORDER BY b.bchuangjian DESC  [ RunTime:0.0011s ]
+ERR: 模板不存在:./Application/Home/View/Blogajax/ajaxBlog.html
+
+[ 2017-11-27T13:20:30+08:00 ] 127.0.0.1 /Home/blogajax/ajaxBlog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000768s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001086s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001287s ]
+SQL:  SELECT b.bid, bc.bcname, u.uid, u.uname, b.bbiaoti,b.bstatus, b.bisvalid
+          FROM blog b JOIN USER u ON b.uid=u.uid
+           JOIN blogclass bc ON b.bcid=bc.bcid
+          ORDER BY b.bchuangjian DESC  [ RunTime:0.0008s ]
+ERR: 模板不存在:./Application/Home/View/Blogajax/ajaxBlog.html
+
+[ 2017-11-27T13:21:10+08:00 ] 127.0.0.1 /Home/blogajax/ajaxBlog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000707s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000769s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000897s ]
+SQL:  SELECT b.bid, bc.bcname, u.uid, u.uname, b.bbiaoti,b.bstatus, b.bisvalid
+          FROM blog b JOIN USER u ON b.uid=u.uid
+           JOIN blogclass bc ON b.bcid=bc.bcid
+          ORDER BY b.bchuangjian DESC  [ RunTime:0.0007s ]
+ERR: 模板不存在:./Application/Home/View/Blogajax/ajaxBlog.html
+
+[ 2017-11-27T13:21:11+08:00 ] 127.0.0.1 /Home/blogajax/ajaxBlog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001254s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000966s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001121s ]
+SQL:  SELECT b.bid, bc.bcname, u.uid, u.uname, b.bbiaoti,b.bstatus, b.bisvalid
+          FROM blog b JOIN USER u ON b.uid=u.uid
+           JOIN blogclass bc ON b.bcid=bc.bcid
+          ORDER BY b.bchuangjian DESC  [ RunTime:0.0007s ]
+ERR: 模板不存在:./Application/Home/View/Blogajax/ajaxBlog.html
+
+[ 2017-11-27T13:21:11+08:00 ] 127.0.0.1 /Home/blogajax/ajaxBlog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001140s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000890s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001055s ]
+SQL:  SELECT b.bid, bc.bcname, u.uid, u.uname, b.bbiaoti,b.bstatus, b.bisvalid
+          FROM blog b JOIN USER u ON b.uid=u.uid
+           JOIN blogclass bc ON b.bcid=bc.bcid
+          ORDER BY b.bchuangjian DESC  [ RunTime:0.0008s ]
+ERR: 模板不存在:./Application/Home/View/Blogajax/ajaxBlog.html
+
+[ 2017-11-27T13:21:11+08:00 ] 127.0.0.1 /Home/blogajax/ajaxBlog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001119s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001106s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001307s ]
+SQL:  SELECT b.bid, bc.bcname, u.uid, u.uname, b.bbiaoti,b.bstatus, b.bisvalid
+          FROM blog b JOIN USER u ON b.uid=u.uid
+           JOIN blogclass bc ON b.bcid=bc.bcid
+          ORDER BY b.bchuangjian DESC  [ RunTime:0.0009s ]
+ERR: 模板不存在:./Application/Home/View/Blogajax/ajaxBlog.html
+
+[ 2017-11-27T13:21:20+08:00 ] 127.0.0.1 /Home/blogajax/ajaxBlog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001051s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000929s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001073s ]
+SQL:  SELECT b.bid, bc.bcname, u.uid, u.uname, b.bbiaoti,b.bstatus, b.bisvalid
+          FROM blog b JOIN USER u ON b.uid=u.uid
+           JOIN blogclass bc ON b.bcid=bc.bcid
+          ORDER BY b.bchuangjian DESC  [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000182s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011715s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011839s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001135s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001298s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001517s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001699s ]
+
+[ 2017-11-27T13:21:21+08:00 ] 127.0.0.1 /index.php/Home/Index/ueditup?action=config&&noCache=1511760081005
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000901s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000736s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000879s ]
+NOTIC: [2] file_get_contents(./Application/Common/Conf/ueditconfig.json): failed to open stream: No such file or directory D:\PHP\wamp64\www\TP\Application\Home\Controller\IndexController.class.php 第 8 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001419s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001565s ]
+
+[ 2017-11-27T13:21:25+08:00 ] 127.0.0.1 /Home/Blogajax/bloginfo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000753s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000996s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001138s ]
+SQL: SELECT * FROM `blog` WHERE `bid` = '10' LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: bcontent D:\PHP\wamp64\www\TP\Application\Home\Controller\BlogajaxController.class.php 第 20 行.
+
+[ 2017-11-27T13:21:27+08:00 ] 127.0.0.1 /Home/Blogajax/bloginfo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000815s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000806s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000918s ]
+SQL: SELECT * FROM `blog` WHERE `bid` = '16' LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: bcontent D:\PHP\wamp64\www\TP\Application\Home\Controller\BlogajaxController.class.php 第 20 行.
+
+[ 2017-11-27T13:21:53+08:00 ] 127.0.0.1 /Home/Blogajax/bloginfo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000685s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000914s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001054s ]
+SQL: SELECT * FROM `blog` WHERE `bid` = '6' LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: bcontent D:\PHP\wamp64\www\TP\Application\Home\Controller\BlogajaxController.class.php 第 20 行.
+
+[ 2017-11-27T13:21:53+08:00 ] 127.0.0.1 /Home/Blogajax/bloginfo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000659s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000690s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000799s ]
+SQL: SELECT * FROM `blog` WHERE `bid` = '6' LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: bcontent D:\PHP\wamp64\www\TP\Application\Home\Controller\BlogajaxController.class.php 第 20 行.
+
+[ 2017-11-27T13:21:54+08:00 ] 127.0.0.1 /Home/Blogajax/bloginfo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000690s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000819s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000919s ]
+SQL: SELECT * FROM `blog` WHERE `bid` = '6' LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: bcontent D:\PHP\wamp64\www\TP\Application\Home\Controller\BlogajaxController.class.php 第 20 行.
+
+[ 2017-11-27T13:22:02+08:00 ] 127.0.0.1 /Home/Blogajax/bloginfo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000728s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000693s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000804s ]
+SQL: SELECT * FROM `blog` WHERE `bid` = '12' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: bcontent D:\PHP\wamp64\www\TP\Application\Home\Controller\BlogajaxController.class.php 第 20 行.
+
+[ 2017-11-27T13:22:54+08:00 ] 127.0.0.1 /Home/blogajax/ajaxBlog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000815s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000712s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000833s ]
+SQL:  SELECT b.bid, bc.bcname, u.uid, u.uname, b.bbiaoti,b.bstatus, b.bisvalid
+          FROM blog b JOIN USER u ON b.uid=u.uid
+           JOIN blogclass bc ON b.bcid=bc.bcid
+          ORDER BY b.bchuangjian DESC  [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000101s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000361s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012812s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012988s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001178s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001368s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001456s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001603s ]
+
+[ 2017-11-27T13:22:54+08:00 ] 127.0.0.1 /index.php/Home/Index/ueditup?action=config&&noCache=1511760174456
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000857s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000723s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000891s ]
+NOTIC: [2] file_get_contents(./Application/Common/Conf/ueditconfig.json): failed to open stream: No such file or directory D:\PHP\wamp64\www\TP\Application\Home\Controller\IndexController.class.php 第 8 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000739s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000865s ]
+
+[ 2017-11-27T13:22:56+08:00 ] 127.0.0.1 /Home/Blogajax/bloginfo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000763s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000785s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000887s ]
+SQL: SELECT * FROM `blog` WHERE `bid` = '13' LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: bcontent D:\PHP\wamp64\www\TP\Application\Home\Controller\BlogajaxController.class.php 第 20 行.
+
+[ 2017-11-27T13:22:56+08:00 ] 127.0.0.1 /Home/Blogajax/bloginfo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000656s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000815s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000927s ]
+SQL: SELECT * FROM `blog` WHERE `bid` = '13' LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: bcontent D:\PHP\wamp64\www\TP\Application\Home\Controller\BlogajaxController.class.php 第 20 行.
+
+[ 2017-11-27T13:23:09+08:00 ] 127.0.0.1 /Home/blogajax/ajaxBlog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000809s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001005s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001125s ]
+SQL:  SELECT b.bid, bc.bcname, u.uid, u.uname, b.bbiaoti,b.bstatus, b.bisvalid
+          FROM blog b JOIN USER u ON b.uid=u.uid
+           JOIN blogclass bc ON b.bcid=bc.bcid
+          ORDER BY b.bchuangjian DESC  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000250s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011665s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011798s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000836s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000981s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001147s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001256s ]
+
+[ 2017-11-27T13:23:09+08:00 ] 127.0.0.1 /index.php/Home/Index/ueditup?action=config&&noCache=1511760189802
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001144s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000974s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001135s ]
+NOTIC: [2] file_get_contents(./Application/Common/Conf/ueditconfig.json): failed to open stream: No such file or directory D:\PHP\wamp64\www\TP\Application\Home\Controller\IndexController.class.php 第 8 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001446s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001660s ]
+
+[ 2017-11-27T13:23:10+08:00 ] 127.0.0.1 /Home/Blogajax/bloginfo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000884s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000736s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000835s ]
+SQL: SELECT * FROM `blog` WHERE `bid` = '16' LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: bcontent D:\PHP\wamp64\www\TP\Application\Home\Controller\BlogajaxController.class.php 第 20 行.
+
+[ 2017-11-27T13:23:11+08:00 ] 127.0.0.1 /Home/Blogajax/bloginfo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000886s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000771s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000877s ]
+SQL: SELECT * FROM `blog` WHERE `bid` = '16' LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: bcontent D:\PHP\wamp64\www\TP\Application\Home\Controller\BlogajaxController.class.php 第 20 行.
+
+[ 2017-11-27T13:23:12+08:00 ] 127.0.0.1 /Home/Blogajax/bloginfo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001062s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001020s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001192s ]
+SQL: SELECT * FROM `blog` WHERE `bid` = '16' LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: bcontent D:\PHP\wamp64\www\TP\Application\Home\Controller\BlogajaxController.class.php 第 20 行.
+
+[ 2017-11-27T13:23:13+08:00 ] 127.0.0.1 /Home/Blogajax/bloginfo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000723s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001065s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001253s ]
+SQL: SELECT * FROM `blog` WHERE `bid` = '16' LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: bcontent D:\PHP\wamp64\www\TP\Application\Home\Controller\BlogajaxController.class.php 第 20 行.
+
+[ 2017-11-27T13:25:54+08:00 ] 127.0.0.1 /Home/blogajax/ajaxBlog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001260s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001209s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001409s ]
+SQL:  SELECT b.bid, bc.bcname, u.uid, u.uname, b.bbiaoti,b.bstatus, b.bisvalid
+          FROM blog b JOIN USER u ON b.uid=u.uid
+           JOIN blogclass bc ON b.bcid=bc.bcid
+          ORDER BY b.bchuangjian DESC  [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000197s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017338s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017545s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000986s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001140s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000949s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001075s ]
+
+[ 2017-11-27T13:25:55+08:00 ] 127.0.0.1 /index.php/Home/Index/ueditup?action=config&&noCache=1511760355152
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001241s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001617s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001838s ]
+NOTIC: [2] file_get_contents(./Application/Common/Conf/ueditconfig.json): failed to open stream: No such file or directory D:\PHP\wamp64\www\TP\Application\Home\Controller\IndexController.class.php 第 8 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001186s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001344s ]
+
+[ 2017-11-27T13:25:58+08:00 ] 127.0.0.1 /Home/Blogajax/bloginfo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000802s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000772s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000873s ]
+SQL: SELECT * FROM `blog` WHERE `bid` = '16' LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: bcontent D:\PHP\wamp64\www\TP\Application\Home\Controller\BlogajaxController.class.php 第 20 行.
+
+[ 2017-11-27T13:26:35+08:00 ] 127.0.0.1 /Home/blogajax/ajaxBlog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001053s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000888s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001009s ]
+SQL:  SELECT b.bid, bc.bcname, u.uid, u.uname, b.bbiaoti,b.bstatus, b.bisvalid
+          FROM blog b JOIN USER u ON b.uid=u.uid
+           JOIN blogclass bc ON b.bcid=bc.bcid
+          ORDER BY b.bchuangjian DESC  [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000111s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000331s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014577s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014763s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001304s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001502s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001150s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001306s ]
+
+[ 2017-11-27T13:26:36+08:00 ] 127.0.0.1 /index.php/Home/Index/ueditup?action=config&&noCache=1511760396381
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001152s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001460s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001696s ]
+NOTIC: [2] file_get_contents(./Application/Common/Conf/ueditconfig.json): failed to open stream: No such file or directory D:\PHP\wamp64\www\TP\Application\Home\Controller\IndexController.class.php 第 8 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001051s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001180s ]
+
+[ 2017-11-27T13:26:56+08:00 ] 127.0.0.1 /Home/blogajax/ajaxBlog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000944s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001027s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001143s ]
+SQL:  SELECT b.bid, bc.bcname, u.uid, u.uname, b.bbiaoti,b.bstatus, b.bisvalid
+          FROM blog b JOIN USER u ON b.uid=u.uid
+           JOIN blogclass bc ON b.bcid=bc.bcid
+          ORDER BY b.bchuangjian DESC  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000179s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000363s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013854s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014042s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000987s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001124s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001173s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001334s ]
+
+[ 2017-11-27T13:26:56+08:00 ] 127.0.0.1 /index.php/Home/Index/ueditup?action=config&&noCache=1511760416535
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001168s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000762s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000889s ]
+NOTIC: [2] file_get_contents(./Application/Common/Conf/ueditconfig.json): failed to open stream: No such file or directory D:\PHP\wamp64\www\TP\Application\Home\Controller\IndexController.class.php 第 8 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000745s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000863s ]
+
+[ 2017-11-27T13:27:00+08:00 ] 127.0.0.1 /Home/Blogajax/bloginfo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001076s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000991s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001194s ]
+SQL: SELECT * FROM `blog` WHERE `bid` = '16' LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: bcontent D:\PHP\wamp64\www\TP\Application\Home\Controller\BlogajaxController.class.php 第 20 行.
+
+[ 2017-11-27T13:33:25+08:00 ] 127.0.0.1 /Home/blogajax/ajaxBlog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001070s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001018s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001143s ]
+SQL:  SELECT b.bid, bc.bcname, u.uid, u.uname, b.bbiaoti,b.bstatus, b.bisvalid
+          FROM blog b JOIN USER u ON b.uid=u.uid
+           JOIN blogclass bc ON b.bcid=bc.bcid
+          ORDER BY b.bchuangjian DESC  [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000149s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000327s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012363s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012504s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000792s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000955s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001189s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001327s ]
+
+[ 2017-11-27T13:33:25+08:00 ] 127.0.0.1 /index.php/Home/Index/ueditup?action=config&&noCache=1511760805872
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000826s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000997s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001135s ]
+NOTIC: [2] file_get_contents(./Application/Common/Conf/ueditconfig.json): failed to open stream: No such file or directory D:\PHP\wamp64\www\TP\Application\Home\Controller\IndexController.class.php 第 8 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001055s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001181s ]
+
+[ 2017-11-27T13:33:29+08:00 ] 127.0.0.1 /Home/Blogajax/bloginfo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001989s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001533s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001707s ]
+SQL: SELECT * FROM `blog` WHERE `bid` = '16' LIMIT 1   [ RunTime:0.0005s ]
+
+[ 2017-11-27T13:33:51+08:00 ] 127.0.0.1 /Home/Blogajax/bloginfo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001041s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001014s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001153s ]
+SQL: SELECT * FROM `blog` WHERE `bid` = '13' LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2017-11-27T13:34:05+08:00 ] 127.0.0.1 /Home/Blogajax/bloginfo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000787s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000790s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000915s ]
+SQL: SELECT * FROM `blog` WHERE `bid` = '2' LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2017-11-27T23:09:14+08:00 ] 127.0.0.1 /Home/Test/loginandreg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000061s ]
+INFO: [ app_init ] --END-- [ RunTime:0.030487s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015668s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015986s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000194s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.059854s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.060023s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.016466s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.016674s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.021849s ]
+INFO: [ app_end ] --END-- [ RunTime:0.022133s ]
+
+[ 2017-11-27T23:57:51+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000094s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003086s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002230s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002478s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000104s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000305s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015584s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015763s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001160s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001359s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001945s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003228s ]
+

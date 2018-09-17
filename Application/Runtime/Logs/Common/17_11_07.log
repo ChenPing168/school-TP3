@@ -1,0 +1,210 @@
+[ 2017-11-07T11:46:46+08:00 ] 127.0.0.1 /view/index/mytest.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002927s ]
+ERR: 无法加载模块:View
+
+[ 2017-11-07T11:49:42+08:00 ] 127.0.0.1 /view/index/mytest.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001553s ]
+ERR: 无法加载模块:View
+
+[ 2017-11-07T11:49:50+08:00 ] 127.0.0.1 /view/index/mytest.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001136s ]
+ERR: 无法加载模块:View
+
+[ 2017-11-07T11:49:52+08:00 ] 127.0.0.1 /view/index/mytest.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002524s ]
+ERR: 无法加载模块:View
+
+[ 2017-11-07T11:50:46+08:00 ] 127.0.0.1 /view/index/mytest.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001971s ]
+ERR: 无法加载模块:View
+
+[ 2017-11-07T11:50:48+08:00 ] 127.0.0.1 /view/index/mytest.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.060719s ]
+ERR: 无法加载模块:View
+
+[ 2017-11-07T13:08:04+08:00 ] 127.0.0.1 /view/index/mytest.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005083s ]
+ERR: 无法加载模块:View
+
+[ 2017-11-07T13:08:53+08:00 ] 127.0.0.1 /view/index/mytest.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001257s ]
+ERR: 无法加载模块:View
+
+[ 2017-11-07T13:08:54+08:00 ] 127.0.0.1 /view/index/mytest.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000892s ]
+ERR: 无法加载模块:View
+
+[ 2017-11-07T13:08:55+08:00 ] 127.0.0.1 /view/index/mytest.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002085s ]
+ERR: 无法加载模块:View
+
+[ 2017-11-07T13:08:55+08:00 ] 127.0.0.1 /view/index/mytest.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001040s ]
+ERR: 无法加载模块:View
+
+[ 2017-11-07T13:08:55+08:00 ] 127.0.0.1 /view/index/mytest.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001563s ]
+ERR: 无法加载模块:View
+
+[ 2017-11-07T13:09:44+08:00 ] 127.0.0.1 /view/index/mytest.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001946s ]
+ERR: 无法加载模块:View
+
+[ 2017-11-07T13:09:46+08:00 ] 127.0.0.1 /view/index/mytest.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004089s ]
+ERR: 无法加载模块:View
+
+[ 2017-11-07T13:11:05+08:00 ] 127.0.0.1 /view/index/mytest.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.034515s ]
+ERR: 无法加载模块:View
+
+[ 2017-11-07T13:11:08+08:00 ] 127.0.0.1 /view/index/mytest.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008255s ]
+ERR: 无法加载模块:View
+
+[ 2017-11-07T13:11:25+08:00 ] 127.0.0.1 /view/index/mytest.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002484s ]
+ERR: 无法加载模块:View
+
+[ 2017-11-07T13:11:27+08:00 ] 127.0.0.1 /view/index/mytest.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.017618s ]
+ERR: 无法加载模块:View
+
+[ 2017-11-07T13:11:29+08:00 ] 127.0.0.1 /view/index/mytest.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001627s ]
+ERR: 无法加载模块:View
+
+[ 2017-11-07T13:16:14+08:00 ] 127.0.0.1 /view/test/mytest.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003102s ]
+ERR: 无法加载模块:View
+
+[ 2017-11-07T13:16:20+08:00 ] 127.0.0.1 /view/test/mytest.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001515s ]
+ERR: 无法加载模块:View
+
+[ 2017-11-07T13:22:43+08:00 ] 127.0.0.1 /view/index/mytest.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.010192s ]
+ERR: 无法加载模块:View
+
+[ 2017-11-07T13:27:56+08:00 ] 127.0.0.1 /view/index/mytest.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001460s ]
+ERR: 无法加载模块:View
+
+[ 2017-11-07T13:27:57+08:00 ] 127.0.0.1 /view/index/mytest.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002359s ]
+ERR: 无法加载模块:View
+
+[ 2017-11-07T13:28:00+08:00 ] 127.0.0.1 /view/index/mytest.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002581s ]
+ERR: 无法加载模块:View
+
+[ 2017-11-07T13:28:02+08:00 ] 127.0.0.1 /view/index/mytest.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015830s ]
+ERR: 无法加载模块:View
+
+[ 2017-11-07T13:28:25+08:00 ] 127.0.0.1 /view/index/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002140s ]
+ERR: 无法加载模块:View
+
+[ 2017-11-07T13:28:29+08:00 ] 127.0.0.1 /view/index/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003104s ]
+ERR: 无法加载模块:View
+
+[ 2017-11-07T13:28:50+08:00 ] 127.0.0.1 /view/index/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001305s ]
+ERR: 无法加载模块:View
+
+[ 2017-11-07T13:28:51+08:00 ] 127.0.0.1 /view/index/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002295s ]
+ERR: 无法加载模块:View
+
+[ 2017-11-07T14:52:03+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001150s ]
+ERR: 无法加载模块:Favicon
+
+[ 2017-11-07T19:24:06+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001188s ]
+ERR: 无法加载模块:Favicon
+
+[ 2017-11-07T19:24:08+08:00 ] 127.0.0.1 /log
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001154s ]
+ERR: 无法加载模块:Log
+
+[ 2017-11-07T20:17:22+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000997s ]
+ERR: 无法加载模块:Favicon
+
+[ 2017-11-07T20:37:34+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001241s ]
+ERR: 无法加载模块:Favicon
+

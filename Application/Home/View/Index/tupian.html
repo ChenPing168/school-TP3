@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>增加联系人</title>
+    <link rel="stylesheet" href="/public/css/bootstrap.min.css"/>
+    <script src="/public/js/jquery.min.js"></script>
+    <style>
+        .biaoti{
+            width: 1000px;
+            height: 100px;
+            margin: 0 auto;
+            /*background-color: yellow;*/
+            line-height: 100px;
+            text-align: center;
+            font-size: 26px;
+        }
+        .neirong{
+            width: 1000px;
+            height: 400px;
+            margin: 0 auto;
+            /*background-color: gold;*/
+        }
+
+        .neirong>button{
+            position: absolute;
+            left: 600px;
+        }
+        .neirong>a{
+            position: absolute;
+            left: 700px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="biaoti">
+        <h2>上传图片</h2>
+    </div>
+    <div class="neirong">
+        <form action="<{:U('ceishi')}>" enctype="multipart/form-data" method="post" id="fom" name="fom" class="form-horizontal">
+
+
+            <div class="form-group has-error">
+                <label for="photo1" class="col-md-2 control-label">上传图片：</label>
+                <div class="col-md-8">
+                    <input type="file" id="photo1" name="photo1" class="form-control input-lg"/>
+                </div>
+            </div>
+
+            <div class="form-group has-error">
+                <label for="photo2" class="col-md-2 control-label">上传图片：</label>
+                <div class="col-md-8">
+                    <input type="file" id="photo2" name="photo2" class="form-control input-lg"/>
+                </div>
+            </div>
+
+            <div class="form-group has-error">
+                <label for="photo3" class="col-md-2 control-label">上传图片：</label>
+                <div class="col-md-8">
+                    <input type="file" id="photo3" name="photo3" class="form-control input-lg"/>
+                </div>
+            </div>
+
+            <div class="form-group has-error">
+                <label for="photo4" class="col-md-2 control-label">上传图片：</label>
+                <div class="col-md-8">
+                    <input type="file" id="photo4" name="photo4" class="form-control input-lg"/>
+                </div>
+            </div>
+
+            <div class="form-group has-error">
+                <label for="photo5" class="col-md-2 control-label">上传图片：</label>
+                <div class="col-md-8">
+                    <input type="file" id="photo5" name="photo5" class="form-control input-lg"/>
+                </div>
+            </div>
+
+            <div class="form-group has-warning">
+                <div class="col-md-2"></div>
+                <button class="btn btn-default col-md-1">确认</button>
+
+                <div class="col-md-1"></div>
+                <a href="<{:U('userinfo')}>" class="btn btn-default col-md-1">返回</a>
+            </div>
+        </form>
+    </div>
+
+</div>
+
+</body>
+</html>

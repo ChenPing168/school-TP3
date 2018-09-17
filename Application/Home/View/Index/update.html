@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>修改个人资料</title>
+    <link rel="stylesheet" href="/public/css/bootstrap.min.css"/>
+    <script src="/public/js/jquery.min.js"></script>
+    <style>
+        .biaoti{
+            width: 1000px;
+            height: 100px;
+            margin: 0 auto;
+            /*background-color: yellow;*/
+            line-height: 100px;
+            text-align: center;
+            font-size: 26px;
+        }
+        .neirong{
+            width: 1000px;
+            height: 400px;
+            margin: 0 auto;
+            /*background-color: gold;*/
+        }
+
+        .neirong>button{
+            position: absolute;
+            left: 600px;
+        }
+        .neirong>a{
+            position: absolute;
+            left: 700px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="biaoti">
+        个人资料修改界面
+    </div>
+    <div class="neirong">
+        <form action="<{:U('xiugai')}>" method="post" id="fom" name="fom" class="form-horizontal">
+            <div class="form-group has-error">
+                <label for="names" class="col-md-2 control-label">用户名：</label>
+                <div class="col-md-8">
+                    <input type="text" id="names" name="uname" class="form-control input-lg" value="<{$name}>" style="opacity: 0.6"/>
+                </div>
+            </div>
+            <div class="form-group has-success">
+                <label for="nichen" class="col-md-2 control-label">昵称：</label>
+                <div class="col-md-8">
+                    <input type="text" id="nichen" name="unichen" class="form-control input-lg" value="<{$nichen}>" style="opacity: 0.6"/>
+                </div>
+            </div>
+            <div class="form-group has-warning">
+                <label for="umobile" class="col-md-2 control-label">电话号码：</label>
+                <div class="col-md-8">
+                    <input type="text" id="umobile" name="umobile" class="form-control input-lg" value="<{$mobile}>" style="opacity: 0.6"/>
+                </div>
+            </div>
+            <div class="form-group has-warning">
+                <label class="col-md-2 control-label">性别：</label>
+                <div class="col-md-8">
+                    男<input type="radio" name="ugender" value="男"/>
+                    女<input type="radio" name="ugender" value="女"/>
+                </div>
+            </div>
+            <div class="form-group has-warning">
+                <div class="col-md-2"></div>
+                <button class="btn btn-default col-md-1">确认</button>
+                <div class="col-md-1"></div>
+                <a href="<{:U('userinfo')}>" class="btn btn-default col-md-1">返回</a>
+            </div>
+        </form>
+    </div>
+    <script>
+        document.forms['fom'].ugender.value='<{$gender}>';
+    </script>
+
+
+</div>
+
+
+
+
+
+
+
+
+</body>
+</html>

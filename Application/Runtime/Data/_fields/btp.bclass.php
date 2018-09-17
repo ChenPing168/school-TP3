@@ -1,0 +1,1 @@
+a:4:{i:0;s:3:"bid";i:1;s:5:"bname";s:3:"_pk";s:3:"bid";s:5:"_type";a:2:{s:3:"bid";s:7:"int(11)";s:5:"bname";s:12:"varchar(255)";}}

@@ -1,0 +1,318 @@
+[ 2017-11-10T10:57:36+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001194s ]
+ERR: 无法加载模块:Favicon
+
+[ 2017-11-10T10:57:45+08:00 ] 127.0.0.1 /public/fonts/glyphicons-halflings-regular.woff
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001232s ]
+ERR: 无法加载模块:Public
+
+[ 2017-11-10T10:57:46+08:00 ] 127.0.0.1 /public/fonts/glyphicons-halflings-regular.ttf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001144s ]
+ERR: 无法加载模块:Public
+
+[ 2017-11-10T11:01:23+08:00 ] 127.0.0.1 /public/fonts/glyphicons-halflings-regular.woff
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001876s ]
+ERR: 无法加载模块:Public
+
+[ 2017-11-10T11:01:23+08:00 ] 127.0.0.1 /public/fonts/glyphicons-halflings-regular.ttf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004715s ]
+ERR: 无法加载模块:Public
+
+[ 2017-11-10T11:05:38+08:00 ] 127.0.0.1 /public/fonts/glyphicons-halflings-regular.woff
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001252s ]
+ERR: 无法加载模块:Public
+
+[ 2017-11-10T11:05:38+08:00 ] 127.0.0.1 /public/fonts/glyphicons-halflings-regular.ttf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001320s ]
+ERR: 无法加载模块:Public
+
+[ 2017-11-10T11:07:53+08:00 ] 127.0.0.1 /public/fonts/glyphicons-halflings-regular.woff
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001399s ]
+ERR: 无法加载模块:Public
+
+[ 2017-11-10T11:07:54+08:00 ] 127.0.0.1 /public/fonts/glyphicons-halflings-regular.ttf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001658s ]
+ERR: 无法加载模块:Public
+
+[ 2017-11-10T11:30:01+08:00 ] 127.0.0.1 /public/fonts/glyphicons-halflings-regular.woff
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001709s ]
+ERR: 无法加载模块:Public
+
+[ 2017-11-10T11:30:02+08:00 ] 127.0.0.1 /public/fonts/glyphicons-halflings-regular.ttf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000122s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002107s ]
+ERR: 无法加载模块:Public
+
+[ 2017-11-10T11:36:11+08:00 ] 127.0.0.1 /public/fonts/glyphicons-halflings-regular.woff
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001511s ]
+ERR: 无法加载模块:Public
+
+[ 2017-11-10T11:36:11+08:00 ] 127.0.0.1 /public/fonts/glyphicons-halflings-regular.ttf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001322s ]
+ERR: 无法加载模块:Public
+
+[ 2017-11-10T11:37:59+08:00 ] 127.0.0.1 /public/fonts/glyphicons-halflings-regular.woff
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001447s ]
+ERR: 无法加载模块:Public
+
+[ 2017-11-10T11:38:00+08:00 ] 127.0.0.1 /public/fonts/glyphicons-halflings-regular.ttf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001518s ]
+ERR: 无法加载模块:Public
+
+[ 2017-11-10T11:39:27+08:00 ] 127.0.0.1 /public/fonts/glyphicons-halflings-regular.woff
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001775s ]
+ERR: 无法加载模块:Public
+
+[ 2017-11-10T11:39:27+08:00 ] 127.0.0.1 /public/fonts/glyphicons-halflings-regular.ttf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.014539s ]
+ERR: 无法加载模块:Public
+
+[ 2017-11-10T11:39:42+08:00 ] 127.0.0.1 /public/fonts/glyphicons-halflings-regular.woff
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002011s ]
+ERR: 无法加载模块:Public
+
+[ 2017-11-10T11:39:42+08:00 ] 127.0.0.1 /public/fonts/glyphicons-halflings-regular.ttf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001313s ]
+ERR: 无法加载模块:Public
+
+[ 2017-11-10T11:39:59+08:00 ] 127.0.0.1 /public/fonts/glyphicons-halflings-regular.woff
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.031318s ]
+ERR: 无法加载模块:Public
+
+[ 2017-11-10T11:39:59+08:00 ] 127.0.0.1 /public/fonts/glyphicons-halflings-regular.ttf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001533s ]
+ERR: 无法加载模块:Public
+
+[ 2017-11-10T11:40:21+08:00 ] 127.0.0.1 /public/fonts/glyphicons-halflings-regular.woff
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001303s ]
+ERR: 无法加载模块:Public
+
+[ 2017-11-10T11:40:21+08:00 ] 127.0.0.1 /public/fonts/glyphicons-halflings-regular.ttf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001953s ]
+ERR: 无法加载模块:Public
+
+[ 2017-11-10T11:41:16+08:00 ] 127.0.0.1 /public/fonts/glyphicons-halflings-regular.woff
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001970s ]
+ERR: 无法加载模块:Public
+
+[ 2017-11-10T11:41:16+08:00 ] 127.0.0.1 /public/fonts/glyphicons-halflings-regular.ttf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001477s ]
+ERR: 无法加载模块:Public
+
+[ 2017-11-10T11:41:22+08:00 ] 127.0.0.1 /public/fonts/glyphicons-halflings-regular.woff
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.024637s ]
+ERR: 无法加载模块:Public
+
+[ 2017-11-10T11:41:22+08:00 ] 127.0.0.1 /public/fonts/glyphicons-halflings-regular.ttf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001867s ]
+ERR: 无法加载模块:Public
+
+[ 2017-11-10T11:41:45+08:00 ] 127.0.0.1 /public/fonts/glyphicons-halflings-regular.woff
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002164s ]
+ERR: 无法加载模块:Public
+
+[ 2017-11-10T11:41:45+08:00 ] 127.0.0.1 /public/fonts/glyphicons-halflings-regular.ttf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001470s ]
+ERR: 无法加载模块:Public
+
+[ 2017-11-10T11:42:00+08:00 ] 127.0.0.1 /public/fonts/glyphicons-halflings-regular.woff
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001985s ]
+ERR: 无法加载模块:Public
+
+[ 2017-11-10T11:42:01+08:00 ] 127.0.0.1 /public/fonts/glyphicons-halflings-regular.ttf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008491s ]
+ERR: 无法加载模块:Public
+
+[ 2017-11-10T11:42:10+08:00 ] 127.0.0.1 /public/fonts/glyphicons-halflings-regular.woff
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001445s ]
+ERR: 无法加载模块:Public
+
+[ 2017-11-10T11:42:10+08:00 ] 127.0.0.1 /public/fonts/glyphicons-halflings-regular.ttf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001332s ]
+ERR: 无法加载模块:Public
+
+[ 2017-11-10T11:43:38+08:00 ] 127.0.0.1 /public/fonts/glyphicons-halflings-regular.woff
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001385s ]
+ERR: 无法加载模块:Public
+
+[ 2017-11-10T11:43:38+08:00 ] 127.0.0.1 /public/fonts/glyphicons-halflings-regular.ttf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001383s ]
+ERR: 无法加载模块:Public
+
+[ 2017-11-10T11:43:55+08:00 ] 127.0.0.1 /public/fonts/glyphicons-halflings-regular.woff
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005805s ]
+ERR: 无法加载模块:Public
+
+[ 2017-11-10T11:43:55+08:00 ] 127.0.0.1 /public/fonts/glyphicons-halflings-regular.ttf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001243s ]
+ERR: 无法加载模块:Public
+
+[ 2017-11-10T11:54:12+08:00 ] 127.0.0.1 /public/fonts/glyphicons-halflings-regular.woff
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001591s ]
+ERR: 无法加载模块:Public
+
+[ 2017-11-10T11:54:12+08:00 ] 127.0.0.1 /public/fonts/glyphicons-halflings-regular.ttf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001646s ]
+ERR: 无法加载模块:Public
+
+[ 2017-11-10T11:54:30+08:00 ] 127.0.0.1 /public/fonts/glyphicons-halflings-regular.woff
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001202s ]
+ERR: 无法加载模块:Public
+
+[ 2017-11-10T11:54:30+08:00 ] 127.0.0.1 /public/fonts/glyphicons-halflings-regular.ttf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001239s ]
+ERR: 无法加载模块:Public
+
+[ 2017-11-10T13:28:08+08:00 ] 127.0.0.1 /public/fonts/glyphicons-halflings-regular.woff
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001314s ]
+ERR: 无法加载模块:Public
+
+[ 2017-11-10T13:28:08+08:00 ] 127.0.0.1 /public/fonts/glyphicons-halflings-regular.ttf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002142s ]
+ERR: 无法加载模块:Public
+
+[ 2017-11-10T13:42:17+08:00 ] 127.0.0.1 /public/fonts/glyphicons-halflings-regular.woff
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000074s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001217s ]
+ERR: 无法加载模块:Public
+
+[ 2017-11-10T13:42:17+08:00 ] 127.0.0.1 /public/fonts/glyphicons-halflings-regular.ttf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001121s ]
+ERR: 无法加载模块:Public
+
+[ 2017-11-10T13:42:34+08:00 ] 127.0.0.1 /public/fonts/glyphicons-halflings-regular.woff
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.009786s ]
+ERR: 无法加载模块:Public
+
+[ 2017-11-10T13:42:34+08:00 ] 127.0.0.1 /public/fonts/glyphicons-halflings-regular.ttf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001372s ]
+ERR: 无法加载模块:Public
+
+[ 2017-11-10T13:48:37+08:00 ] 127.0.0.1 /public/fonts/glyphicons-halflings-regular.woff
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001556s ]
+ERR: 无法加载模块:Public
+
+[ 2017-11-10T13:48:37+08:00 ] 127.0.0.1 /public/fonts/glyphicons-halflings-regular.ttf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004648s ]
+ERR: 无法加载模块:Public
+
+[ 2017-11-10T13:49:11+08:00 ] 127.0.0.1 /public/fonts/glyphicons-halflings-regular.woff
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001861s ]
+ERR: 无法加载模块:Public
+
+[ 2017-11-10T13:49:12+08:00 ] 127.0.0.1 /public/fonts/glyphicons-halflings-regular.ttf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001113s ]
+ERR: 无法加载模块:Public
+
+[ 2017-11-10T13:50:13+08:00 ] 127.0.0.1 /public/fonts/glyphicons-halflings-regular.woff
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004224s ]
+ERR: 无法加载模块:Public
+
+[ 2017-11-10T13:50:13+08:00 ] 127.0.0.1 /public/fonts/glyphicons-halflings-regular.ttf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001500s ]
+ERR: 无法加载模块:Public
+

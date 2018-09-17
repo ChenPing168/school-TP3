@@ -1,0 +1,1260 @@
+[ 2017-11-10T10:57:36+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001514s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003532s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003643s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.007179s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007388s ]
+
+[ 2017-11-10T10:57:42+08:00 ] 127.0.0.1 /home/index/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002311s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.010488s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010643s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000193s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.054246s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.054386s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.004319s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004444s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005379s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005503s ]
+
+[ 2017-11-10T10:57:45+08:00 ] 127.0.0.1 /Home/Index/zhuce.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002357s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.031169s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.031487s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000211s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000398s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.068877s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.069063s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002259s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002432s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.008926s ]
+INFO: [ app_end ] --END-- [ RunTime:0.013226s ]
+
+[ 2017-11-10T10:58:11+08:00 ] 127.0.0.1 /Home/Index/regUser
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000112s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003013s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.008094s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009392s ]
+SQL: INSERT INTO `tp_user` (`uname`,`upwd`,`umobile`,`unichen`,`usex`,`uregtime`,`ulastupdatetime`) VALUES ('俺上班不多久吧','$2y$10$fjoAPnkRYeFq5jhMVYaSlOChg5VdkrhxuX6BzIvI4.zZA0zNokVzi','1242344235453','津湖不是的','男','2017-11-10 10:58:10','2017-11-10 10:58:10') [ RunTime:0.0842s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002624s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002729s ]
+
+[ 2017-11-10T11:01:19+08:00 ] 127.0.0.1 /Home/Index/regUser
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001919s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003106s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003237s ]
+SQL: INSERT INTO `tp_user` (`uname`,`upwd`,`umobile`,`unichen`,`usex`,`uregtime`,`ulastupdatetime`) VALUES ('俺上班不多久吧','$2y$10$Y.bGR4g9IBuRDLiECUttdeSI43aze2s1kOqOoyH8R9aTWPufjNRNe','1242344235453','津湖不是的','男','2017-11-10 11:01:18','2017-11-10 11:01:18') [ RunTime:0.0643s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003176s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003290s ]
+
+[ 2017-11-10T11:01:23+08:00 ] 127.0.0.1 /Home/Index/zhuce.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005982s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007522s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007734s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000122s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000248s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.174940s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.175102s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.004716s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004834s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002551s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002753s ]
+
+[ 2017-11-10T11:01:37+08:00 ] 127.0.0.1 /Home/Index/yaya
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001664s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002639s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002762s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0744s ]
+ERR: Think\Model:rg方法不存在！
+
+[ 2017-11-10T11:05:38+08:00 ] 127.0.0.1 /Home/Index/zhuce.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002169s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002478s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002587s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000150s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024293s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024392s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002667s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002752s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002725s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002819s ]
+
+[ 2017-11-10T11:05:58+08:00 ] 127.0.0.1 /Home/Index/regUser
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002978s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003043s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003173s ]
+SQL: INSERT INTO `tp_user` (`uname`,`upwd`,`umobile`,`unichen`,`usex`,`uregtime`,`ulastupdatetime`) VALUES ('舒服舒服','$2y$10$ZNczYZDHddLsPCOIJ1MTIODynou9iWz/OnGiogHfcWajiuEkcVF4i','1321312312','好久不撒谎个','男','2017-11-10 11:05:58','2017-11-10 11:05:58') [ RunTime:0.0705s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003079s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003184s ]
+
+[ 2017-11-10T11:07:53+08:00 ] 127.0.0.1 /Home/Index/zhuce.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001115s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002020s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002286s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000241s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024321s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024481s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001681s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001766s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002908s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002995s ]
+
+[ 2017-11-10T11:08:06+08:00 ] 127.0.0.1 /Home/Index/regUser
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002080s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005601s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005837s ]
+SQL: INSERT INTO `tp_user` (`uname`,`upwd`,`umobile`,`unichen`,`usex`,`uregtime`,`ulastupdatetime`) VALUES ('','$2y$10$AOo3bghUGFtFRIA.2Ljqs.1Dl92bwFnqsQhp.iX5CyhIKrmmapzYS','1321312312','23','男','2017-11-10 11:08:06','2017-11-10 11:08:06') [ RunTime:0.0651s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003321s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003437s ]
+
+[ 2017-11-10T11:30:01+08:00 ] 127.0.0.1 /Home/Index/zhuce.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.016730s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.010464s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010657s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000163s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.064337s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.064480s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002380s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002481s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006263s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006391s ]
+
+[ 2017-11-10T11:30:05+08:00 ] 127.0.0.1 /Home/Index/regUser
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008877s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002497s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002647s ]
+SQL: INSERT INTO `tp_user` (`uname`,`upwd`,`umobile`,`unichen`,`usex`,`uregtime`,`ulastupdatetime`) VALUES ('','$2y$10$xh4algakyJpQaLaO7vEZ4eYsz2t5NnDAS/s.GnLUgtmT6ieSqULB.','','','男','2017-11-10 11:30:04','2017-11-10 11:30:04') [ RunTime:0.0563s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001695s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001790s ]
+
+[ 2017-11-10T11:36:10+08:00 ] 127.0.0.1 /Home/Index/zhuce.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006486s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005100s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005224s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000063s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000975s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034805s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034922s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003932s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004036s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003728s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003967s ]
+
+[ 2017-11-10T11:36:21+08:00 ] 127.0.0.1 /Home/Index/regUser
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001016s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001555s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001667s ]
+SQL: INSERT INTO `tp_user` (`uname`,`upwd`,`umobile`,`unichen`,`usex`,`uregtime`,`ulastupdatetime`) VALUES ('fDSF','$2y$10$hdfgGrQNjMxWTF0X/Gq1WOcK.7LLeVbxBdbUHGn1DlXozicjoyyHa','1321312312','FSDF','男','2017-11-10 11:36:20','2017-11-10 11:36:20') [ RunTime:0.0670s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001368s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001454s ]
+
+[ 2017-11-10T11:37:59+08:00 ] 127.0.0.1 /Home/Index/zhuce.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002400s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005809s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006790s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000108s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000353s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034852s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035033s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.004714s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004878s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003007s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003175s ]
+
+[ 2017-11-10T11:38:11+08:00 ] 127.0.0.1 /Home/Index/yaya
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.031684s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.032329s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.032536s ]
+NOTIC: [8] Undefined index: password D:\myphp2017\pg37\kuangjia\ThinkPHP\Library\Think\Model.class.php 第 1294 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000184s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.107638s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.107764s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002225s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002327s ]
+
+[ 2017-11-10T11:38:15+08:00 ] 127.0.0.1 /Home/Index/5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004659s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002990s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003173s ]
+ERR: 非法操作:5
+
+[ 2017-11-10T11:38:54+08:00 ] 127.0.0.1 /Home/Index/5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.042290s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002990s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003173s ]
+ERR: 非法操作:5
+
+[ 2017-11-10T11:38:58+08:00 ] 127.0.0.1 /Home/Index/5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001868s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003210s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003368s ]
+ERR: 非法操作:5
+
+[ 2017-11-10T11:39:27+08:00 ] 127.0.0.1 /Home/Index/zhuce.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005989s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.009113s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009554s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000110s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000291s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.147350s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.147533s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.017706s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.017872s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006147s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006318s ]
+
+[ 2017-11-10T11:39:38+08:00 ] 127.0.0.1 /Home/Index/yaya
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002927s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003123s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003327s ]
+NOTIC: [8] Undefined index: password D:\myphp2017\pg37\kuangjia\ThinkPHP\Library\Think\Model.class.php 第 1294 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000200s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000393s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.088597s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.088768s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001815s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001974s ]
+
+[ 2017-11-10T11:39:42+08:00 ] 127.0.0.1 /Home/Index/zhuce
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.038300s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002999s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003209s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000109s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000291s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.047903s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.048252s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002051s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002211s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.007532s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007706s ]
+
+[ 2017-11-10T11:39:55+08:00 ] 127.0.0.1 /Home/Index/yaya
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002289s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007695s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007894s ]
+NOTIC: [8] Undefined index: password D:\myphp2017\pg37\kuangjia\ThinkPHP\Library\Think\Model.class.php 第 1294 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000113s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000337s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036493s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036670s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001960s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002129s ]
+
+[ 2017-11-10T11:39:59+08:00 ] 127.0.0.1 /Home/Index/zhuce
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004210s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004392s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000110s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000294s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.039176s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039356s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001874s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002032s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003057s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003224s ]
+
+[ 2017-11-10T11:40:17+08:00 ] 127.0.0.1 /Home/Index/yaya
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002986s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.011797s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.011961s ]
+NOTIC: [8] Undefined index: password D:\myphp2017\pg37\kuangjia\ThinkPHP\Library\Think\Model.class.php 第 1294 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000205s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.072110s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.072328s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.008324s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008440s ]
+
+[ 2017-11-10T11:40:21+08:00 ] 127.0.0.1 /Home/Index/zhuce
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002620s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003943s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004125s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000108s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000283s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.194539s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.194872s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.004940s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005104s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002894s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003060s ]
+
+[ 2017-11-10T11:40:21+08:00 ] 127.0.0.1 /Home/Index/zhuce
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005828s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004571s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004767s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000119s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000533s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.054417s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.054596s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.012568s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.012735s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002853s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003164s ]
+
+[ 2017-11-10T11:41:15+08:00 ] 127.0.0.1 /Home/Index/zhuce
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002868s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007470s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007986s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000107s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000285s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.116889s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.117407s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.006534s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006703s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004708s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004983s ]
+
+[ 2017-11-10T11:41:19+08:00 ] 127.0.0.1 /Home/Index/yaya
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006956s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001872s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000108s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000228s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038072s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038192s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001146s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001242s ]
+
+[ 2017-11-10T11:41:22+08:00 ] 127.0.0.1 /Home/Index/zhuce
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002172s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015553s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015780s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000350s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032409s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032565s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001366s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003139s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002779s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002904s ]
+
+[ 2017-11-10T11:41:32+08:00 ] 127.0.0.1 /Home/Index/yaya
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005493s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.097661s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.097854s ]
+SQL: SELECT * FROM `tp_user` WHERE `uname` = '爱迪生' LIMIT 1   [ RunTime:0.0018s ]
+NOTIC: [2] call_user_func_array() expects parameter 1 to be a valid callback, function 'checkPhone' not found or invalid function name D:\myphp2017\pg37\kuangjia\ThinkPHP\Library\Think\Model.class.php 第 1270 行.
+SQL: INSERT INTO `tp_user` (`uname`,`upwd`,`umobile`,`unichen`,`usex`) VALUES ('爱迪生','123456','132242','是否打算','男') [ RunTime:0.0753s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002081s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002214s ]
+
+[ 2017-11-10T11:41:44+08:00 ] 127.0.0.1 /Home/Index/zhuce
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004268s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004907s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005264s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000108s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000293s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.084971s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.085602s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.007205s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007377s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006575s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006749s ]
+
+[ 2017-11-10T11:41:56+08:00 ] 127.0.0.1 /Home/Index/yaya
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003075s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005059s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005292s ]
+SQL: SELECT * FROM `tp_user` WHERE `uname` = '爱迪生' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000206s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020163s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020261s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001824s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001944s ]
+
+[ 2017-11-10T11:42:00+08:00 ] 127.0.0.1 /Home/Index/zhuce
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.022890s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.016115s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.016374s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000169s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.007329s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.189350s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.189605s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.006613s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006889s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.053636s ]
+INFO: [ app_end ] --END-- [ RunTime:0.053819s ]
+
+[ 2017-11-10T11:42:07+08:00 ] 127.0.0.1 /Home/Index/yaya
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001705s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001588s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001718s ]
+SQL: SELECT * FROM `tp_user` WHERE `uname` = '打出' LIMIT 1   [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000185s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015920s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016031s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001269s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001364s ]
+
+[ 2017-11-10T11:42:10+08:00 ] 127.0.0.1 /Home/Index/zhuce
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006704s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007757s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007946s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000107s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000285s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.128122s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.128301s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002127s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002384s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006471s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006650s ]
+
+[ 2017-11-10T11:43:37+08:00 ] 127.0.0.1 /Home/Index/zhuce
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.012522s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.018003s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.018185s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000185s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000358s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.051511s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.051686s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003506s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003747s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005753s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005935s ]
+
+[ 2017-11-10T11:43:51+08:00 ] 127.0.0.1 /Home/Index/yaya
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002555s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005279s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005446s ]
+SQL: SELECT * FROM `tp_user` WHERE `uname` = '水电费是' LIMIT 1   [ RunTime:0.0020s ]
+NOTIC: [2] preg_match(): No ending delimiter '^' found D:\myphp2017\pg37\kuangjia\ThinkPHP\Library\Think\Model.class.php 第 1116 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000474s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001612s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.045735s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045883s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003679s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010199s ]
+
+[ 2017-11-10T11:43:54+08:00 ] 127.0.0.1 /Home/Index/zhuce
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002294s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002839s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003021s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000107s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000282s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036509s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036754s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001818s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001970s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004401s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004647s ]
+
+[ 2017-11-10T11:54:12+08:00 ] 127.0.0.1 /Home/Index/zhuce
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001853s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004933s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005060s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000165s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023678s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023789s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001854s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001947s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002372s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002472s ]
+
+[ 2017-11-10T11:54:26+08:00 ] 127.0.0.1 /Home/Index/yaya
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002888s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.013928s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.014189s ]
+SQL: SELECT * FROM `tp_user` WHERE `uname` = '短时间个' LIMIT 1   [ RunTime:0.0029s ]
+NOTIC: [2] preg_match(): No ending delimiter '^' found D:\myphp2017\pg37\kuangjia\ThinkPHP\Library\Think\Model.class.php 第 1116 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000057s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000166s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026327s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026834s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001830s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001921s ]
+
+[ 2017-11-10T11:54:30+08:00 ] 127.0.0.1 /Home/Index/zhuce
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001441s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001880s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002016s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000063s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000172s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.070063s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.070173s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001232s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001332s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006276s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006380s ]
+
+[ 2017-11-10T11:55:25+08:00 ] 127.0.0.1 /Home/Index/yaya
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001053s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001226s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001385s ]
+SQL: SELECT * FROM `tp_user` WHERE `uname` = '大擦擦' LIMIT 1   [ RunTime:0.0016s ]
+ERR: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect datetime value: '1510286125' for column 'uregtime' at row 1
+
+[ 2017-11-10T11:57:00+08:00 ] 127.0.0.1 /Home/Index/yaya
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003250s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.008812s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009615s ]
+SQL: SELECT * FROM `tp_user` WHERE `uname` = '大擦擦' LIMIT 1   [ RunTime:0.0010s ]
+ERR: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect datetime value: '1510286220' for column 'uregtime' at row 1
+
+[ 2017-11-10T11:57:22+08:00 ] 127.0.0.1 /Home/Index/yaya
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.041484s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004856s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004988s ]
+SQL: SELECT * FROM `tp_user` WHERE `uname` = '大擦擦' LIMIT 1   [ RunTime:0.0012s ]
+NOTIC: [2] Missing argument 1 for Home\Model\UserModel::time() D:\myphp2017\pg37\kuangjia\Application\Home\Model\UserModel.class.php 第 52 行.
+NOTIC: [2] Missing argument 1 for Home\Model\UserModel::time() D:\myphp2017\pg37\kuangjia\Application\Home\Model\UserModel.class.php 第 52 行.
+SQL: INSERT INTO `tp_user` (`uname`,`upwd`,`umobile`,`unichen`,`usex`,`uregtime`,`ulastupdatetime`) VALUES ('大擦擦','$2y$10$lNDEcFhfq9o4Q8.kO8SJ3uoTOn6gaeRCV7PErArFsdhJoCGhOVkoS','13458158897','东方大厦','男','2017-11-10 11:57:22','2017-11-10 11:57:22') [ RunTime:0.1260s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002665s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002766s ]
+
+[ 2017-11-10T13:28:07+08:00 ] 127.0.0.1 /Home/Index/zhuce
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003062s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.011361s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.011657s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000110s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000284s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.059294s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.059473s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003991s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004152s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004533s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004698s ]
+
+[ 2017-11-10T13:28:27+08:00 ] 127.0.0.1 /Home/Index/yaya
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005600s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.008590s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008800s ]
+NOTIC: [2] Missing argument 1 for Home\Model\UserModel::time() D:\myphp2017\pg37\kuangjia\Application\Home\Model\UserModel.class.php 第 56 行.
+NOTIC: [2] Missing argument 1 for Home\Model\UserModel::time() D:\myphp2017\pg37\kuangjia\Application\Home\Model\UserModel.class.php 第 56 行.
+SQL: INSERT INTO `tp_user` (`upwd`,`umobile`,`unichen`,`usex`,`uname`,`uregtime`,`ulastupdatetime`) VALUES ('$2y$10$L6Tp0aGFwtfoLzP7.t2D2.nnuKzu8vFD4Zl5ysNPgfqvwZGNmiLqq','18780173472','女车架号v','男','as共和国','2017-11-10 13:28:27','2017-11-10 13:28:27') [ RunTime:0.1534s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003232s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003363s ]
+
+[ 2017-11-10T13:41:21+08:00 ] 127.0.0.1 /Home/Index/yaya
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005705s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005701s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005907s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000092s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000270s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.056267s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.056453s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.005031s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005190s ]
+
+[ 2017-11-10T13:41:31+08:00 ] 127.0.0.1 /Home/Index/yaya
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000097s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002454s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005788s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005962s ]
+NOTIC: [2] Missing argument 1 for Home\Model\UserModel::time() D:\myphp2017\pg37\kuangjia\Application\Home\Model\UserModel.class.php 第 58 行.
+NOTIC: [2] Missing argument 1 for Home\Model\UserModel::time() D:\myphp2017\pg37\kuangjia\Application\Home\Model\UserModel.class.php 第 58 行.
+SQL: INSERT INTO `tp_user` (`upwd`,`umobile`,`unichen`,`usex`,`uname`,`uregtime`,`ulastupdatetime`) VALUES ('$2y$10$YG7lKcx46sX8G6L9ijbv/upLNFTLj8CCTxLWK9WgZWpnSQhtvntea','18780173472','女车架号v','男','','2017-11-10 13:41:31','2017-11-10 13:41:31') [ RunTime:0.0823s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003393s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003538s ]
+
+[ 2017-11-10T13:42:17+08:00 ] 127.0.0.1 /Home/Index/zhuce
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001154s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001674s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001782s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000158s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030084s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030188s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001980s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002069s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001586s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001677s ]
+
+[ 2017-11-10T13:42:27+08:00 ] 127.0.0.1 /Home/Index/yaya
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002336s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002174s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002321s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000205s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013632s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013731s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001138s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001234s ]
+
+[ 2017-11-10T13:42:34+08:00 ] 127.0.0.1 /Home/Index/zhuce
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002449s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003809s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003991s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000111s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000290s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033688s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033870s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001976s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002136s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005387s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005821s ]
+
+[ 2017-11-10T13:42:45+08:00 ] 127.0.0.1 /Home/Index/yaya
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002557s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003049s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003240s ]
+NOTIC: [2] Missing argument 1 for Home\Model\UserModel::time() D:\myphp2017\pg37\kuangjia\Application\Home\Model\UserModel.class.php 第 58 行.
+NOTIC: [2] Missing argument 1 for Home\Model\UserModel::time() D:\myphp2017\pg37\kuangjia\Application\Home\Model\UserModel.class.php 第 58 行.
+SQL: INSERT INTO `tp_user` (`upwd`,`umobile`,`unichen`,`usex`,`uname`,`uregtime`,`ulastupdatetime`) VALUES ('$2y$10$AKwj9NTu9luzT5JJ8oOhrejw5bLAfjmrhBYSu1RnVCWMvWGLaNKOa','13458158897','312324','男','423424','2017-11-10 13:42:45','2017-11-10 13:42:45') [ RunTime:0.0854s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001677s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001780s ]
+
+[ 2017-11-10T13:43:32+08:00 ] 127.0.0.1 /Home/Index/yaya
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001792s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.009953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010084s ]
+NOTIC: [2] Missing argument 1 for Home\Model\UserModel::time() D:\myphp2017\pg37\kuangjia\Application\Home\Model\UserModel.class.php 第 58 行.
+NOTIC: [2] Missing argument 1 for Home\Model\UserModel::time() D:\myphp2017\pg37\kuangjia\Application\Home\Model\UserModel.class.php 第 58 行.
+SQL: INSERT INTO `tp_user` (`upwd`,`umobile`,`unichen`,`usex`,`uname`,`uregtime`,`ulastupdatetime`) VALUES ('$2y$10$tLMFvMJEBd7jz9aHW02tz.3NxSchV7Qbg3WWIvhDF1JEqZzgIpspu','13458158897','312324','男','423424','2017-11-10 13:43:32','2017-11-10 13:43:32') [ RunTime:0.1125s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001620s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001717s ]
+
+[ 2017-11-10T13:48:37+08:00 ] 127.0.0.1 /Home/Index/zhuce
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004743s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005688s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006107s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000169s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032286s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032403s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.004946s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005050s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002751s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002871s ]
+
+[ 2017-11-10T13:49:11+08:00 ] 127.0.0.1 /Home/Index/zhuce
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001155s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001409s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001511s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000153s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015751s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015847s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001031s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001118s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002002s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002096s ]
+
+[ 2017-11-10T13:49:31+08:00 ] 127.0.0.1 /Home/Index/yaya
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002313s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002325s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002438s ]
+NOTIC: [2] Missing argument 1 for Home\Model\UserModel::time() D:\myphp2017\pg37\kuangjia\Application\Home\Model\UserModel.class.php 第 58 行.
+NOTIC: [2] Missing argument 1 for Home\Model\UserModel::time() D:\myphp2017\pg37\kuangjia\Application\Home\Model\UserModel.class.php 第 58 行.
+SQL: INSERT INTO `tp_user` (`uname`,`upwd`,`umobile`,`unichen`,`usex`,`uregtime`,`ulastupdatetime`) VALUES ('爱迪生','$2y$10$TIYVHNG6cNmIX.8kBrFb2OAF08ADt4WEYQe5NyzyQv32GHGIdXDSm','13458158897','大叔大婶','男','2017-11-10 13:49:31','2017-11-10 13:49:31') [ RunTime:0.0816s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002382s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002535s ]
+
+[ 2017-11-10T13:50:07+08:00 ] 127.0.0.1 /Home/Index/yaya
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004965s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003038s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003297s ]
+SQL: SELECT * FROM `tp_user` WHERE `uname` = '爱迪生' LIMIT 1   [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000095s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000371s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038954s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039140s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.006055s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006217s ]
+
+[ 2017-11-10T13:50:13+08:00 ] 127.0.0.1 /Home/Index/zhuce
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002261s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002982s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003162s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000108s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000280s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032847s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033025s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001898s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002216s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005410s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005586s ]
+
+[ 2017-11-10T16:45:42+08:00 ] 127.0.0.1 /Home/Index/test.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002154s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004415s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004555s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000185s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.048222s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.048356s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002612s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002729s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003307s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003427s ]
+
+[ 2017-11-10T16:45:45+08:00 ] 127.0.0.1 /Home/Index/test.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006620s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003749s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004052s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.034676s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.034940s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.120017s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.120836s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003155s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003470s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005373s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005770s ]
+
+[ 2017-11-10T16:47:28+08:00 ] 127.0.0.1 /Home/Index/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007398s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005160s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005318s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column '爱迪生' in 'where clause'
+
+[ 2017-11-10T16:48:18+08:00 ] 127.0.0.1 /Home/Index/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002361s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002793s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002979s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column '爱迪生' in 'where clause'
+
+[ 2017-11-10T16:49:00+08:00 ] 127.0.0.1 /Home/Index/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004340s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.033687s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.033885s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column '爱迪生' in 'where clause'
+
+[ 2017-11-10T16:52:30+08:00 ] 127.0.0.1 /Home/Index/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001796s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002705s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002830s ]
+SQL: SELECT * FROM `tp_user` WHERE `uname` = '爱迪生' AND `upwd` = '123456'  [ RunTime:0.0011s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002529s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002632s ]
+
+[ 2017-11-10T16:53:45+08:00 ] 127.0.0.1 /Home/Index/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001434s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002834s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002954s ]
+SQL: SELECT * FROM `tp_user` WHERE `uname` = '爱迪生' AND `upwd` = '123456'  [ RunTime:0.0009s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002281s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002388s ]
+
+[ 2017-11-10T16:54:22+08:00 ] 127.0.0.1 /Home/Index/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.026458s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002973s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003163s ]
+SQL: SELECT * FROM `tp_user` WHERE `uname` = '爱迪生' AND `upwd` = '123456'  [ RunTime:0.0019s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002783s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002952s ]
+
+[ 2017-11-10T16:58:01+08:00 ] 127.0.0.1 /Home/Index/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005098s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007792s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007988s ]
+SQL: SELECT * FROM `tp_user` WHERE `uname` = '爱迪生' AND `upwd` = '123456'  [ RunTime:0.0016s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000168s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022016s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022134s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002165s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002266s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003414s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003518s ]
+
+[ 2017-11-10T16:58:03+08:00 ] 127.0.0.1 /Home/Index/userinfo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001849s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002304s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002447s ]
+NOTIC: [8] Undefined index: username D:\myphp2017\pg37\kuangjia\Application\Home\Controller\IndexController.class.php 第 69 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000239s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.042153s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042412s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001561s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001691s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003211s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003429s ]
+
+[ 2017-11-10T17:00:20+08:00 ] 127.0.0.1 /Home/Index/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.013613s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003060s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003177s ]
+SQL: SELECT * FROM `tp_user` WHERE `uname` = '爱迪生' AND `upwd` = '123456'  [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000141s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018160s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018254s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001529s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001617s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002649s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002903s ]
+
+[ 2017-11-10T17:00:25+08:00 ] 127.0.0.1 /Home/Index/userinfo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000117s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002475s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005744s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005905s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000503s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.050271s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.050431s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.006625s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006763s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004245s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004446s ]
+
+[ 2017-11-10T17:06:21+08:00 ] 127.0.0.1 /Home/Index/userinfo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.014452s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003757s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003891s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000148s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046699s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046825s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003653s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003753s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003118s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003230s ]
+
+[ 2017-11-10T17:06:42+08:00 ] 127.0.0.1 /Home/Index/userinfo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005035s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.009461s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009651s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000263s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.112948s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.113145s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.004193s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004371s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006988s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007160s ]
+
+[ 2017-11-10T17:06:55+08:00 ] 127.0.0.1 /Home/Index/userinfo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002373s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005379s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005568s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000253s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.063213s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.063413s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002864s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003034s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003116s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003350s ]
+

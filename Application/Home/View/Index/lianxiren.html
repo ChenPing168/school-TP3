@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="/public/css/bootstrap.min.css"/>
+    <script src="/Public/js/jquery.min.js"></script>
+    <style>
+
+    </style>
+</head>
+<body>
+<div class="container">
+<h1>联系人详情列表</h1>
+    <table class="table table-bordered">
+        <tr >
+            <th>姓名</th>
+            <th>性别</th>
+            <th>电话号码</th>
+            <th>email</th>
+            <th>公司</th>
+            <th>操作</th>
+        </tr>
+        <foreach name="list" item="vo">
+            <tr><td><{$vo.name}></td>
+                <td><{$vo.sex}></td>
+                <td><{$vo.mobile}></td>
+                <td><{$vo.email}></td>
+                <td><{$vo.gongsi}></td>
+                <td><a href="<{:U('gai',array('id'=>$vo['id']))}>">修改</a></td>
+
+            </tr>
+        </foreach>
+
+    </table>
+    <h3 style="text-align: center"><{$page}></h3>
+    <a href="<{:u('userinfo')}>"><button class="btn btn-info">返回</button></a>
+</div>
+</body>
+</html>

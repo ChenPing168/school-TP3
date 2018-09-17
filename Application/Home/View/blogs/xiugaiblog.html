@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link type="image/x-icon" href="/Public/favicon.ico" rel="shortcut icon">
+    <title>用户信息</title>
+    <link rel="stylesheet" href="/Public/css/bootstrap.min.css">
+    <taglib name="html" />
+</head>
+<body>
+<div style="max-width: 1000px;margin: 0 auto" id="xiugai">
+    <h3 class="text-center">修改博客</h3>
+    <foreach name="data" item="vo">
+    <form action=" <{:u('xiugaiboke_QR')}>?bid=<{$vo.bid}>" method="post">
+            <div class="input-group input-group-lg">
+                <span class="input-group-addon">标题：</span>
+                <input type="text" name="bittle" class="form-control" value="<{$vo.bbiaoti}>">
+            </div>
+
+            <div class="input-group input-group-lg">
+                <span class="input-group-addon">类别：</span>
+                <select name="blogclass" id="blogclass" class="form-control">
+                    <foreach name="select" item="vo">
+                        <option value="<{$vo.bcid}>"><{$vo.bcname}></option>
+                    </foreach>
+                </select>
+            </div>
+            <div class="input-group input-group-lg">
+                <span class="input-group-addon">状态：</span>
+                <p style="margin-top: 11px;margin-left: 10px">
+                    发布：<input type="radio" name="zhuangtai" value="1" checked>
+                    不发布：<input type="radio" name="zhuangtai" value="0" >
+                </p>
+            </div>
+        <div>
+            <!--<foreach name="data" item="vo">-->
+                <div><html:editor id="info" style="height:300px" name="pcontent" type="UEDITOR"> <{:htmlspecialchars_decode($vo['bneirong'])}></html:editor></div>
+            <!--</foreach>-->
+            <input type="submit" class="btn btn-default btn-lg" style="position: relative;left: 400px; top: 10px;color:#0088cc" name="chk">
+        </div>
+    </form>
+    </foreach>
+</div>
+</body>
+</html>

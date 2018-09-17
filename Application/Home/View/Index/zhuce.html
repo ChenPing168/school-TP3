@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>注册账号</title>
+    <link rel="stylesheet" href="/public/css/bootstrap.min.css"/>
+    <script src="/public/js/jquery.min.js"></script>
+    <style>
+        #myres{
+            font-size: 12px;
+            color: red;
+        }
+        a:hover{
+            text-decoration:none;
+        }
+        .an{
+            position: absolute;
+            margin-top:330px;
+            margin-left: 190px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <h1>注册账号</h1>
+        <form action="yaya" method="post" class="form-horizontal" style="position: absolute;left: 50px" onsubmit="return chk(this)">
+            <div class="input-group input-group-lg">
+                <span class="input-group-addon glyphicon glyphicon-user"></span>
+                <input type="text" class="form-control" placeholder="username" name="uname" id="username">
+            </div>
+            <span id="myres"></span>
+            <br/>
+
+            <div class="input-group input-group-lg">
+                <span class="input-group-addon glyphicon glyphicon-lock"></span>
+                <input type="password" class="form-control " placeholder="password" name="upwd" id="password">
+            </div>
+            <br/>
+            <div class="input-group input-group-lg">
+                <span class="input-group-addon glyphicon glyphicon-tower"></span>
+                <input type="text" class="form-control " placeholder="请输入电话" name="umobile" id="phone">
+            </div>
+            <br/>
+            <div class="input-group input-group-lg">
+                <span class="input-group-addon glyphicon glyphicon-tower"></span>
+                <input type="text" class="form-control " placeholder="请输入昵称" name="unichen" id="nname">
+            </div>
+            <br/>
+
+            <br/>
+
+            <div class="input-group input-group-lg">
+                <span style="font-size: 17px">性别</span>
+                <span >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                <label><input type="radio" name="usex" value="男" checked="checked"/>男</label>
+                <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                <label><input type="radio" name="usex" value="女">女</label>
+            </div>
+            <br/>
+
+            <button type="submit" class="btn btn-default btn-lg btn-warning" style="position: relative;left: 20px">确认注册</button>
+            <p id="errinfo" style="color: red;font-size: 14px;"></p>
+
+        </form>
+        <a href="<{:u('test')}>" class="an"><button  class="btn btn-default btn-lg btn-warning">取消注册</button></a>
+
+    </div>
+
+    <script >
+
+
+        function chk(frm) {
+//            var uname=document.getElementById('username');
+//            var upwd=document.getElementById('password');
+//            var phone=document.getElementById('phone');
+//            var nname=document.getElementById('nname');
+//            var gender=document.getElementById('gender');
+
+            if($("#username").value==''&& $("#password").value==''&& $("#phone").value==''&& $("#nname").value=='') {
+                $("#errinfo").html('请填写完整信息');
+
+            }
+            else if($("#username").val()==""){
+                $("#errinfo").html('请输入姓名');
+            }else if($("#username").val==""){
+                $("#password").html('请输入密码');
+            }else if($("#username").val==""){
+                $("#phone").html('请输入电话');
+            }else if($("#nname").val==""){
+                $("#errinfo").html('请输入昵称');
+            }
+            else{
+                return true;
+            }
+
+            return false
+
+        }
+    </script>
+</div>
+</body>
+</html>

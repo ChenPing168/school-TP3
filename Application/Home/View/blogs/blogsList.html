@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link type="image/x-icon" href="/public/faviconico" rel="shortcut icon">
+    <title>Lovo博客</title>
+    <link rel="stylesheet" href="/public/css/bootstrap.min.css">
+    <style>
+        .blist{
+            overflow: hidden;
+        }
+        .gsdetail{
+            font-size: 120%;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="container">
+        <div class="headertop" style="overflow: hidden;">
+            <!-- 用户信息 -->
+            <div class="pull-right" style="margin: 20px 30px 0 0;">
+                欢迎您，<{$uname}> <a href="<{:U('logout')}>">安全退出</a>
+            </div>
+            <!-- blog网站名称 -->
+            <h1>Lovo Blog</h1>
+            <!-- 头部搜索 -->
+            <div class="col-sm-3" style="float: right;">
+                <div class="input-group">
+                    <input type="text" class="form-control">
+                    <span class="input-group-btn">
+                            <button class="btn btn-default" type="button">搜索</button>
+                        </span>
+                </div>
+            </div>
+            <!-- 头部导航  -->
+            <!--<ul class="nav nav-pills">-->
+                <!--<foreach name="fenlei" item="vo">-->
+                    <!--<li><a href="<{:u('blogsList')}>?bcid=<{$vo.bcid}>"><{$vo.bcname}></a></li>-->
+                <!--</foreach>-->
+            <!--</ul>-->
+            <ul class="nav nav-pills daohang ">
+                <li class="active"><a href="index.html">首页</a></li>
+                <li><a href="<{:U('blogsList')}>?bcid=1">新闻</a></li>
+                <li><a href="<{:U('blogsList')}>?bcid=2">时事</a></li>
+                <li><a href="<{:U('blogsList')}>?bcid=3">评论</a></li>
+                <li><a href="<{:U('blogsList')}>?bcid=4">旅游</a></li>
+                <li><a href="<{:U('blogsList')}>?bcid=5">其它</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+<!-- 页面内容部分 -->
+<div class="container" style="margin-top: 30px;">
+    <div class="col-sm-11" style="background-color: #f9f9f9;min-height: 500px;">
+        <h2>博客列表</h2>
+        <foreach name="data" item="vo">
+            <div class="blist">
+                <h3><a href="<{:U('blog')}>?bid=<{$vo.bid}>"><{$vo.bbiaoti}></a></h3>
+                <p style="text-indent: 2em;">
+                    <{$vo.bneirong}>
+                </p>
+                <div class="pull-right">
+                    <a href="#"><{$vo.uname}></a>
+                    <span><{$vo.btime}></span>
+                </div>
+            </div>
+            <hr>
+        </foreach>
+
+        <p style="text-align: center;">
+            总计有 <{$totalRows}> 篇博客<{$page}>
+        </p>
+    </div>
+</div>
+
+<!-- 页面底部 -->
+<footer>
+    <div class="container" style="margin-top: 30px;">
+        <hr>
+        <div class="text-center" style="color: lightgray;">成都狼窝 &reg;2006--2017</div>
+    </div>
+</footer>
+<script src="../js/jquery-1.12.2.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script>
+
+    $(function () {
+        var cidnum = location.search.substr(1).split("&")[0].split("=")[1];
+        $(".daohang li").eq(cidnum).attr("class",'active');
+    });
+</script>
+</body>
+</html>
